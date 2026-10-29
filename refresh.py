@@ -133,16 +133,20 @@ AFFIL = '''<aside class="affil placeholder" aria-label="Affiliate slot">
   <li>Training / cert partner — <em>link TBD</em></li></ul>
   <small>Disclosure text goes here once real affiliate links are added.</small>
 </aside>'''
-NEWSLETTER = '''<section class="newsletter" id="newsletter">
+def newsletter(small=False):
+    url = esc(CFG["newsletter_url"]); fid = esc(CFG["beehiiv_form_id"])
+    embed = f'<script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="{fid}"></script>'
+    if small:
+        return f'''<section class="newsletter small" id="newsletter">
+  <h2>Get the DFIR CTF digest</h2>
+  {embed}
+  <p class="fallback">Form not loading? <a href="{url}" rel="noopener">Subscribe</a></p>
+</section>'''
+    return f'''<section class="newsletter" id="newsletter">
   <h2>Get the weekly DFIR CTF digest</h2>
   <p>New forensics & blue-team challenges, deadlines, and fresh write-ups — one short email a week.</p>
-  <form onsubmit="event.preventDefault();this.querySelector('.ok').hidden=false;" action="#" method="post">
-    <label class="sr" for="email">Email</label>
-    <input id="email" type="email" name="email" placeholder="you@example.com" required>
-    <button type="submit">Subscribe</button>
-    <p class="ok" hidden>Thanks! (Demo only — no newsletter backend is connected yet.)</p>
-  </form>
-  <small class="ph-label">PLACEHOLDER · form not connected to any newsletter service</small>
+  {embed}
+  <p class="fallback">Form not loading? <a href="{url}" rel="noopener">Subscribe</a></p>
 </section>'''
 ABOUT = '''<section class="about" id="about"><h2>About</h2>
 <p><strong>Security Volition CTF Board</strong> is a free, community-run calendar of digital forensics &amp; incident response (DFIR), forensics and blue-team challenges, plus an archive of past challenges with links to their evidence files and public write-ups. It is built by a DFIR incident response leader for the community: no hype, no invented dates. Events from CTFtime are refreshed automatically; vendor and community events are checked against the organizer's own page, and anything without a confirmed date is clearly marked <em>TBA</em>.</p>
@@ -160,6 +164,7 @@ def page(title, active, body, desc, path):
 <meta property="og:url" content="{esc(canon)}"><meta property="og:type" content="website"><meta property="og:site_name" content="{esc(c["site_name"])}">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="style.css">
+<script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
 </head><body>
 <header class="top"><div class="wrap">
   <a class="logo" href="index.html"><span class="mark">SV</span><span><b>{esc(c["brand"])}</b> <span class="sub">CTF Board</span></span></a>
@@ -188,16 +193,16 @@ def build(offline=False):
 <div class="list">{"".join(event_card(e) for e in tba)}</div>
 {AFFIL}
 <h2>Always-on practice platforms</h2><div class="list">{"".join(event_card(e) for e in always)}</div>
-{NEWSLETTER}{ABOUT}'''
+{newsletter()}{ABOUT}'''
     OUT.mkdir(exist_ok=True)
     (OUT / "index.html").write_text(page(f'{CFG["site_name"]} — Upcoming DFIR & forensics CTFs', "up", body, CFG["tagline"], ""))
     abody = f'''<section class="hero small"><h1>Challenge archive</h1><p>{len(arch)} past DFIR challenges with their evidence files and community write-ups, where public.</p></section>
 <input class="search" id="q" type="search" placeholder="Filter: memory, iOS, pcap, Magnet…" aria-label="Filter archive">
 <div class="list" id="arch">{"".join(archive_card(a) for a in arch)}</div>
 <script>document.getElementById('q').oninput=e=>{{const v=e.target.value.toLowerCase();document.querySelectorAll('#arch .arc').forEach(a=>a.hidden=!a.dataset.text.includes(v));}};</script>
-{AFFIL}{NEWSLETTER}'''
+{AFFIL}{newsletter(True)}'''
     (OUT / "archive.html").write_text(page(f'Archive of past DFIR challenges — {CFG["site_name"]}', "arc", abody, "Past DFIR CTFs with evidence images and write-ups.", "archive.html"))
-    (OUT / "about.html").write_text(page(f'About — {CFG["site_name"]}', "about", ABOUT + SPONSOR + NEWSLETTER, "About the Security Volition CTF Board.", "about.html"))
+    (OUT / "about.html").write_text(page(f'About — {CFG["site_name"]}', "about", ABOUT + SPONSOR + newsletter(True), "About the Security Volition CTF Board.", "about.html"))
     (OUT / "CNAME").write_text(CFG.get("custom_domain", "ctf.securityvolition.com") + "\n")
     (OUT / "style.css").write_text((ROOT / "templates" / "style.css").read_text())
     (OUT / "events.json").write_text(json.dumps([{k: (v.isoformat() if isinstance(v, dt.datetime) else v) for k, v in e.items()} for e in dated + tba + always], indent=1, default=str))

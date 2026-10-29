@@ -47,3 +47,5 @@ h2{margin:36px 0 6px;font-size:1.3rem}.note{color:var(--mute);font-size:.88rem;m
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 footer{border-top:1px solid var(--line);margin-top:40px;padding:18px 0;color:var(--mute);font-size:.84rem}
 @media (max-width:560px){.card,.arc{padding:12px;gap:10px}.cal,.yr{flex-basis:46px}.hero{padding-top:26px}}
+.newsletter.small{margin:28px 0 10px;padding:16px 18px}.newsletter.small h2{font-size:1.1rem}
+.newsletter iframe{max-width:100%}.fallback{font-size:.85rem;color:var(--mute);margin:8px 0 0}

@@ -8,3 +8,5 @@ ctftime_keywords:
   strong: ["dfir", "incident response", "blue team", "blue-team", "blueteam", "threat hunt", "memory forensic", "memory analysis", "malware analysis", "log analysis", "soc analyst"]
   forensics: ["forensic", "pcap", "network traffic analysis", "steganography"]
 custom_domain: ctf.securityvolition.com
+newsletter_url: https://richards-newsletter-aab62e.beehiiv.com/subscribe
+beehiiv_form_id: 9ef17098-b64a-40a9-b1b4-3d255dc6d026
