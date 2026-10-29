@@ -1,0 +1,717 @@
+[
+ {
+  "url": "https://seizedaflaq.cyberonites.com/",
+  "status": 0,
+  "final": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of "
+ },
+ {
+  "url": "https://wolvctf.io/",
+  "status": 0,
+  "final": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of "
+ },
+ {
+  "url": "https://quals.sslctf.ru/",
+  "status": 0,
+  "final": "Remote end closed connection without response"
+ },
+ {
+  "url": "https://spooky.ctfd.io/",
+  "status": 200,
+  "final": "https://spooky.ctfd.io/"
+ },
+ {
+  "url": "https://stuxnet999.github.io/dfir/inctfi-2020-investigation/",
+  "status": 200,
+  "final": "https://stuxnet999.github.io/dfir/inctfi-2020-investigation/"
+ },
+ {
+  "url": "https://ctftime.org/task/7855",
+  "status": 200,
+  "final": "https://ctftime.org/task/7855"
+ },
+ {
+  "url": "https://belkasoft.com/belkactf-jul2022-writeup",
+  "status": 200,
+  "final": "https://belkasoft.com/belkactf-jul2022-writeup"
+ },
+ {
+  "url": "https://github.com/dfrws/dfrws2017-challenge",
+  "status": 200,
+  "final": "https://github.com/dfrws/dfrws2017-challenge"
+ },
+ {
+  "url": "https://ctftime.org/task/8818",
+  "status": 200,
+  "final": "https://ctftime.org/task/8818"
+ },
+ {
+  "url": "https://ctftime.org/event/3492/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3492/"
+ },
+ {
+  "url": "https://www.stark4n6.com/2025/03/magnet-virtual-summit-2025-ctf-ciphers.html",
+  "status": 200,
+  "final": "https://www.stark4n6.com/2025/03/magnet-virtual-summit-2025-ctf-ciphers.html"
+ },
+ {
+  "url": "https://www.sans.org/cyber-security-training-events/london-november-2026",
+  "status": 200,
+  "final": "https://www.sans.org/cyber-security-training-events/london-november-2026"
+ },
+ {
+  "url": "https://www.holidayhackchallenge.com/2019/",
+  "status": 200,
+  "final": "https://www.holidayhackchallenge.com/2019/"
+ },
+ {
+  "url": "https://blog.kairostay.com/posts/magnet-virtual-summit-24/",
+  "status": 200,
+  "final": "https://blog.kairostay.com/posts/magnet-virtual-summit-24/"
+ },
+ {
+  "url": "https://ctftime.org/task/11844",
+  "status": 200,
+  "final": "https://ctftime.org/task/11844"
+ },
+ {
+  "url": "https://thedfirreport.com/products/dfir-labs/",
+  "status": 200,
+  "final": "https://thedfirreport.com/products/dfir-labs/"
+ },
+ {
+  "url": "https://www.sans.org/cyber-security-training-events/paris-november-2026",
+  "status": 200,
+  "final": "https://www.sans.org/cyber-security-training-events/paris-november-2026"
+ },
+ {
+  "url": "https://forensafe.com/blogs/challenges/magnetctf24_android.html",
+  "status": 200,
+  "final": "https://forensafe.com/blogs/challenges/magnetctf24_android.html"
+ },
+ {
+  "url": "https://www.holidayhackchallenge.com/2018/",
+  "status": 200,
+  "final": "https://www.holidayhackchallenge.com/2018/"
+ },
+ {
+  "url": "https://www.sans.org/cyber-ranges/upcoming-netwars-tournament",
+  "status": 200,
+  "final": "https://www.sans.org/cyber-ranges/upcoming-netwars-tournament"
+ },
+ {
+  "url": "https://belkasoft.com/ctf",
+  "status": 200,
+  "final": "https://belkasoft.com/ctf"
+ },
+ {
+  "url": "https://nitectf.cryptonitemit.in/",
+  "status": 200,
+  "final": "https://nitectf.cryptonitemit.in/"
+ },
+ {
+  "url": "https://forensafe.com/blogs/challenges/magnetctf24_cipher.html",
+  "status": 200,
+  "final": "https://forensafe.com/blogs/challenges/magnetctf24_cipher.html"
+ },
+ {
+  "url": "https://ctftime.org/event/3381/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3381/"
+ },
+ {
+  "url": "https://ctf.hiddeninvestigations.net/",
+  "status": 200,
+  "final": "https://ctf.hiddeninvestigations.net/"
+ },
+ {
+  "url": "https://www.stark4n6.com/2023/10/cellebrite-ctf-2023-felix.html",
+  "status": 200,
+  "final": "https://www.stark4n6.com/2023/10/cellebrite-ctf-2023-felix.html"
+ },
+ {
+  "url": "https://digitalinvestigator.blogspot.com/2023/09/linux-web-server-forensics-dr-ali-hadis.html",
+  "status": 200,
+  "final": "https://digitalinvestigator.blogspot.com/2023/09/linux-web-server-forensics-dr-ali-hadis.html"
+ },
+ {
+  "url": "https://2026.chronos-security.ro/",
+  "status": 200,
+  "final": "https://2026.chronos-security.ro/"
+ },
+ {
+  "url": "https://huntress.ctf.games/",
+  "status": 200,
+  "final": "https://ctf.huntress.com/"
+ },
+ {
+  "url": "https://hackersinindia.com/init-ctf",
+  "status": 200,
+  "final": "https://hackersinindia.com/init-ctf"
+ },
+ {
+  "url": "https://ctftime.org/event/3485/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3485/"
+ },
+ {
+  "url": "https://stuxnet999.github.io/dfir/defenitctf-2020-usb2/",
+  "status": 200,
+  "final": "https://stuxnet999.github.io/dfir/defenitctf-2020-usb2/"
+ },
+ {
+  "url": "https://unstop.com/p/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293",
+  "status": 200,
+  "final": "https://unstop.com/p/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293"
+ },
+ {
+  "url": "https://ctf.cellebrite.com/login",
+  "status": 200,
+  "final": "https://ctf.cellebrite.com/login"
+ },
+ {
+  "url": "https://ctftime.org/event/3472/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3472/"
+ },
+ {
+  "url": "https://web.archive.org/web/2021/https://defcon2019.ctfd.io/",
+  "status": 200,
+  "final": "https://web.archive.org/web/20220328095757/https://defcon2019.ctfd.io/"
+ },
+ {
+  "url": "https://www.magnetforensics.com/blog/magnet-virtual-summit-2026-capture-the-flag/",
+  "status": 200,
+  "final": "https://www.magnetforensics.com/blog/magnet-virtual-summit-2026-capture-the-flag/"
+ },
+ {
+  "url": "https://cfreds.nist.gov/all/Cellebrite/Cellebrite2021CTF",
+  "status": 200,
+  "final": "https://cfreds.nist.gov/all/Cellebrite/Cellebrite2021CTF"
+ },
+ {
+  "url": "https://www.guardians.sk/guardians-2027/",
+  "status": 200,
+  "final": "https://www.guardians.sk/guardians-2027/"
+ },
+ {
+  "url": "https://blackhatmea.com/capture-the-flag",
+  "status": 200,
+  "final": "https://blackhatmea.com/competition/capture-the-flag"
+ },
+ {
+  "url": "https://belkasoft.com/belkactf6/",
+  "status": 200,
+  "final": "https://belkasoft.com/belkactf6/"
+ },
+ {
+  "url": "https://www.sans.org/cyber-security-training-events/amsterdam-december-2026",
+  "status": 200,
+  "final": "https://www.sans.org/cyber-security-training-events/amsterdam-december-2026"
+ },
+ {
+  "url": "https://web.archive.org/web/2021/https://www.petermstewart.net/magnet-virtual-summit-2020-ctf-memory-analysis-write-up/",
+  "status": 200,
+  "final": "https://web.archive.org/web/20211028041100/https://www.petermstewart.net/magnet-virtual-summit-2020-ctf-memory-analysis-write-up/"
+ },
+ {
+  "url": "https://stuxnet999.github.io/dfir/inctfi-2020-logarithm/",
+  "status": 200,
+  "final": "https://stuxnet999.github.io/dfir/inctfi-2020-logarithm/"
+ },
+ {
+  "url": "https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/Lookout%20Foxy",
+  "status": 200,
+  "final": "https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/Lookout%20Foxy"
+ },
+ {
+  "url": "https://forensafe.com/blogs/challenges/CellebriteCtfSharon.html",
+  "status": 200,
+  "final": "https://forensafe.com/blogs/challenges/CellebriteCtfSharon.html"
+ },
+ {
+  "url": "https://app.hackthebox.com/sherlocks",
+  "status": 200,
+  "final": "https://app.hackthebox.com/sherlocks"
+ },
+ {
+  "url": "https://forensafe.com/blogs/challenges/magnetctf24_ios.html",
+  "status": 200,
+  "final": "https://forensafe.com/blogs/challenges/magnetctf24_ios.html"
+ },
+ {
+  "url": "https://github.com/dfrws/dfrws2007-challenge/tree/master/challenge-submissions",
+  "status": 200,
+  "final": "https://github.com/dfrws/dfrws2007-challenge/tree/master/challenge-submissions"
+ },
+ {
+  "url": "https://forensic8or.blogspot.com/2020/07/i-cant-remember-my-password.html",
+  "status": 200,
+  "final": "https://forensic8or.blogspot.com/2020/07/i-cant-remember-my-password.html"
+ },
+ {
+  "url": "https://www.holidayhackchallenge.com/2018/winners_answers.html",
+  "status": 200,
+  "final": "https://www.holidayhackchallenge.com/2018/winners_answers.html"
+ },
+ {
+  "url": "https://ctftime.org/event/3336/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3336/"
+ },
+ {
+  "url": "https://ctftime.org/event/3386/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3386/"
+ },
+ {
+  "url": "https://web.archive.org/web/2021/https://www.petermstewart.net/13cubed-mini-memory-ctf-write-up/",
+  "status": 200,
+  "final": "https://web.archive.org/web/20220122093847/https://www.petermstewart.net/13cubed-mini-memory-ctf-write-up/"
+ },
+ {
+  "url": "https://def.camp/competitions/decode-and-conquer-forensics-ctf-challenge/",
+  "status": 200,
+  "final": "https://def.camp/competitions/decode-and-conquer-forensics-ctf-challenge/"
+ },
+ {
+  "url": "https://web.archive.org/web/2021/http://www.forensickb.com/2008/01/forensic-practical.html",
+  "status": 200,
+  "final": "https://web.archive.org/web/20220121031251/http://www.forensickb.com/2008/01/forensic-practical.html"
+ },
+ {
+  "url": "https://dfir300.blogspot.com/2020/06/mvs2020ctf-write-up-egg-hunt.html",
+  "status": 200,
+  "final": "https://dfir300.blogspot.com/2020/06/mvs2020ctf-write-up-egg-hunt.html"
+ },
+ {
+  "url": "https://cellebrite.com/en/blog/final-ctf-2022-round-up/",
+  "status": 200,
+  "final": "https://cellebrite.com/en/home/"
+ },
+ {
+  "url": "https://stuxnet999.github.io/dfir/hacktm-ctf-2020-find-my-pass/",
+  "status": 200,
+  "final": "https://stuxnet999.github.io/dfir/hacktm-ctf-2020-find-my-pass/"
+ },
+ {
+  "url": "https://ctftime.org/task/9720",
+  "status": 200,
+  "final": "https://ctftime.org/task/9720"
+ },
+ {
+  "url": "https://dfir101.wordpress.com/2024/03/19/magnet-forensics-virtual-ctf-2024-android-challenges/",
+  "status": 200,
+  "final": "https://dfir101.wordpress.com/2024/03/19/magnet-forensics-virtual-ctf-2024-android-challenges/"
+ },
+ {
+  "url": "https://ctftime.org/task/10822",
+  "status": 200,
+  "final": "https://ctftime.org/task/10822"
+ },
+ {
+  "url": "https://www.k-dfs.co.kr/notice/?bmode=view&idx=175126219",
+  "status": 200,
+  "final": "https://www.k-dfs.co.kr/notice/?bmode=view&idx=175126219"
+ },
+ {
+  "url": "https://ctf-techvisions.com/",
+  "status": 200,
+  "final": "https://ctf-techvisions.com/"
+ },
+ {
+  "url": "https://l3m0nctf.xyz/",
+  "status": 200,
+  "final": "https://l3m0nctf.xyz/"
+ },
+ {
+  "url": "https://gaian.space/ctf",
+  "status": 200,
+  "final": "https://gaian.space/ctf/"
+ },
+ {
+  "url": "https://teamrocketist.github.io/2019/03/05/Forensics-BsidesSF-2019-goodluks3/",
+  "status": 200,
+  "final": "https://teamrocketist.github.io/2019/03/05/Forensics-BsidesSF-2019-goodluks3/"
+ },
+ {
+  "url": "https://www.stark4n6.com/2024/03/magnet-virtual-summit-2024-ctf-android.html",
+  "status": 200,
+  "final": "https://www.stark4n6.com/2024/03/magnet-virtual-summit-2024-ctf-android.html"
+ },
+ {
+  "url": "https://www.xintra.org/labs/",
+  "status": 200,
+  "final": "https://www.xintra.org/simulations"
+ },
+ {
+  "url": "https://belkasoft.com/ctf_july_2022/",
+  "status": 200,
+  "final": "https://belkasoft.com/ctf_july_2022/"
+ },
+ {
+  "url": "https://www.hackthebox.com/",
+  "status": 200,
+  "final": "https://www.hackthebox.com/"
+ },
+ {
+  "url": "https://challenges.foxtonforensics.com/",
+  "status": 200,
+  "final": "https://challenges.foxtonforensics.com/"
+ },
+ {
+  "url": "https://www.magnetforensics.com/blog/magnet-virtual-summit-2024-capture-the-flag/",
+  "status": 200,
+  "final": "https://www.magnetforensics.com/blog/magnet-virtual-summit-2024-capture-the-flag/"
+ },
+ {
+  "url": "https://downloads.digitalcorpora.org/corpora/scenarios/magnet/",
+  "status": 200,
+  "final": "https://digitalcorpora.s3.amazonaws.com/s3_browser.html#corpora/scenarios/magnet/"
+ },
+ {
+  "url": "https://dfirlabs.thedfirreport.com/dfirchallenge",
+  "status": 200,
+  "final": "https://dfirlabs.thedfirreport.com/dfirchallenge"
+ },
+ {
+  "url": "https://ctftime.org/event/3489/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3489/"
+ },
+ {
+  "url": "https://ctftime.org/task/7756",
+  "status": 200,
+  "final": "https://ctftime.org/task/7756"
+ },
+ {
+  "url": "https://ctftime.org/event/3367/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3367/"
+ },
+ {
+  "url": "https://belkasoft.com/belkactf6-writeup",
+  "status": 200,
+  "final": "https://belkasoft.com/belkactf6-writeup"
+ },
+ {
+  "url": "https://ctftime.org/writeup/15820",
+  "status": 200,
+  "final": "https://ctftime.org/writeup/15820"
+ },
+ {
+  "url": "https://www.ashemery.com/dfir.html",
+  "status": 200,
+  "final": "https://www.ashemery.com/dfir.html"
+ },
+ {
+  "url": "https://ctftime.org/event/3467/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3467/"
+ },
+ {
+  "url": "https://www.malware-traffic-analysis.net/training-exercises.html",
+  "status": 200,
+  "final": "https://www.malware-traffic-analysis.net/training-exercises.html"
+ },
+ {
+  "url": "https://ctftime.org/event/3486/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3486/"
+ },
+ {
+  "url": "https://eyesopensecurity.com/ctf-briefing.html",
+  "status": 200,
+  "final": "https://eyesopensecurity.com/ctf-briefing.html"
+ },
+ {
+  "url": "https://ctftime.org/event/3490/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3490/"
+ },
+ {
+  "url": "https://blog.bi0s.in/2020/02/10/Forensics/StrangePCAP-HackTM/",
+  "status": 200,
+  "final": "https://blog.bi0s.in/2020/02/10/Forensics/StrangePCAP-HackTM/"
+ },
+ {
+  "url": "https://www.dfchallenge.org/techwinners/2020",
+  "status": 200,
+  "final": "https://www.dfchallenge.org/techwinners/2020"
+ },
+ {
+  "url": "https://ctftime.org/writeup/14438",
+  "status": 200,
+  "final": "https://ctftime.org/writeup/14438"
+ },
+ {
+  "url": "https://github.com/stuxnet999/MemLabs",
+  "status": 200,
+  "final": "https://github.com/stuxnet999/MemLabs"
+ },
+ {
+  "url": "https://www.foxtonforensics.com/blog/post/cyber-challenge-walkthrough-nov-2019",
+  "status": 200,
+  "final": "https://www.foxtonforensics.com/blog/post/cyber-challenge-walkthrough-nov-2019"
+ },
+ {
+  "url": "https://belkasoft.com/belkactf7-writeup",
+  "status": 200,
+  "final": "https://belkasoft.com/belkactf7-writeup"
+ },
+ {
+  "url": "https://belkasoft.com/belkactf7/info",
+  "status": 200,
+  "final": "https://belkasoft.com/belkactf7/info"
+ },
+ {
+  "url": "https://ctftime.org/event/3049/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3049/"
+ },
+ {
+  "url": "https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/Investigation",
+  "status": 200,
+  "final": "https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/Investigation"
+ },
+ {
+  "url": "https://github.com/dfrws/dfrws2018-challenge",
+  "status": 200,
+  "final": "https://github.com/dfrws/dfrws2018-challenge"
+ },
+ {
+  "url": "https://ctftime.org/event/3419/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3419/"
+ },
+ {
+  "url": "https://www.magnetforensics.com/blog/submissions-now-open-to-present-at-magnet-user-summit-magnet-virtual-summit-2027/",
+  "status": 200,
+  "final": "https://www.magnetforensics.com/blog/submissions-now-open-to-present-at-magnet-user-summit-magnet-virtual-summit-2027/"
+ },
+ {
+  "url": "https://ctftime.org/event/3460/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3460/"
+ },
+ {
+  "url": "https://belkasoft.com/belkactf7/",
+  "status": 200,
+  "final": "https://belkasoft.com/belkactf7/"
+ },
+ {
+  "url": "https://beginninghacking.net/2022/07/25/cyberdefenders-grabthephisher/",
+  "status": 200,
+  "final": "https://beginninghacking.net/2022/07/25/cyberdefenders-grabthephisher/"
+ },
+ {
+  "url": "https://ctf.pink.bayern/",
+  "status": 200,
+  "final": "https://ctf.pink.bayern/"
+ },
+ {
+  "url": "https://ctftime.org/event/3333/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3333/"
+ },
+ {
+  "url": "https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/LOGarithm",
+  "status": 200,
+  "final": "https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/LOGarithm"
+ },
+ {
+  "url": "https://www.cyber-ninja-ctf.fr/",
+  "status": 200,
+  "final": "https://www.cyber-ninja-ctf.fr/"
+ },
+ {
+  "url": "https://web.archive.org/web/2021/http://forensicscontest.com/puzzles",
+  "status": 200,
+  "final": "https://web.archive.org/web/20211007171228/https://forensicscontest.com/puzzles"
+ },
+ {
+  "url": "https://www.stark4n6.com/2023/10/cellebrite-ctf-2023-abe.html",
+  "status": 200,
+  "final": "https://www.stark4n6.com/2023/10/cellebrite-ctf-2023-abe.html"
+ },
+ {
+  "url": "https://www.stark4n6.com/2025/01/magnet-virtual-summit-2025-ctf-workshop.html",
+  "status": 200,
+  "final": "https://www.stark4n6.com/2025/01/magnet-virtual-summit-2025-ctf-workshop.html"
+ },
+ {
+  "url": "https://cyberdefenders.org/blueteam-ctf-challenges/grabthephisher/",
+  "status": 200,
+  "final": "https://cyberdefenders.org/blueteam-ctf-challenges/grabthephisher/"
+ },
+ {
+  "url": "https://drive.google.com/drive/folders/1fb3un5w4UR88oKfHvt1vMgcqSmqvKOlc",
+  "status": 200,
+  "final": "https://accounts.google.com/v3/signin/identifier?continue=https://drive.google.com/drive/folders/1fb3un5w4UR88oKfHvt1vMgcqSmqvKOlc&followup=https://drive.google.com/drive/folders/1fb3un5w4UR88oKfHvt1vMgcqSmqvKOlc&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1629220392:1793275813969583"
+ },
+ {
+  "url": "https://dfir300.blogspot.com/2020/06/mvs2020ctf-write-up-android.html",
+  "status": 200,
+  "final": "https://dfir300.blogspot.com/2020/06/mvs2020ctf-write-up-android.html"
+ },
+ {
+  "url": "https://github.com/dfrws/dfrws2018-challenge/tree/master/challenge-submissions",
+  "status": 200,
+  "final": "https://github.com/dfrws/dfrws2018-challenge/tree/master/challenge-submissions"
+ },
+ {
+  "url": "https://github.com/dfrws/dfrws2007-challenge",
+  "status": 200,
+  "final": "https://github.com/dfrws/dfrws2007-challenge"
+ },
+ {
+  "url": "https://cfreds-archive.nist.gov/Hacking_Case.html",
+  "status": 200,
+  "final": "https://cfreds-archive.nist.gov/Hacking_Case.html"
+ },
+ {
+  "url": "https://ctftime.org/event/3408/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3408/"
+ },
+ {
+  "url": "https://blueteamlabs.online/",
+  "status": 200,
+  "final": "https://blueteamlabs.online/"
+ },
+ {
+  "url": "https://rootfs.eu/pwn2win2019-cloud-admin/",
+  "status": 200,
+  "final": "https://rootfs.eu/pwn2win2019-cloud-admin/"
+ },
+ {
+  "url": "https://web.archive.org/web/2021/http://www.forensickb.com/2008/01/forensic-practical-1-answers.html",
+  "status": 200,
+  "final": "https://web.archive.org/web/20220121031351/http://www.forensickb.com/2008/01/forensic-practical-1-answers.html"
+ },
+ {
+  "url": "https://www.stark4n6.com/2020/06/magnet-virtual-summit-2020-ctf-ios.html",
+  "status": 200,
+  "final": "https://www.stark4n6.com/2020/06/magnet-virtual-summit-2020-ctf-ios.html"
+ },
+ {
+  "url": "https://cfreds-archive.nist.gov/data_leakage_case/data-leakage-case.html",
+  "status": 200,
+  "final": "https://cfreds-archive.nist.gov/data_leakage_case/data-leakage-case.html"
+ },
+ {
+  "url": "https://www.stark4n6.com/2024/03/magnet-virtual-summit-2024-ctf-cipher.html",
+  "status": 200,
+  "final": "https://www.stark4n6.com/2024/03/magnet-virtual-summit-2024-ctf-cipher.html"
+ },
+ {
+  "url": "https://www.stark4n6.com/2024/03/magnet-virtual-summit-2024-ctf-ios.html",
+  "status": 200,
+  "final": "https://www.stark4n6.com/2024/03/magnet-virtual-summit-2024-ctf-ios.html"
+ },
+ {
+  "url": "https://web.archive.org/web/2021/https://digital-forensics.sans.org/blog/2014/02/08/apt-memory-and-malware-analysis-solution",
+  "status": 200,
+  "final": "https://web.archive.org/web/20221206072243/https://digital-forensics.sans.org/blog/2014/02/08/apt-memory-and-malware-analysis-solution"
+ },
+ {
+  "url": "https://ctftime.org/event/3339/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3339/"
+ },
+ {
+  "url": "https://web.archive.org/web/2021/https://www.petermstewart.net/defcon-2019-dfir-ctf-memory-forensics-write-up/",
+  "status": 200,
+  "final": "https://web.archive.org/web/20211028053739/https://www.petermstewart.net/defcon-2019-dfir-ctf-memory-forensics-write-up/"
+ },
+ {
+  "url": "https://www.stark4n6.com/2022/06/cellebrite-ctf-2022-heisenbergs-android.html",
+  "status": 200,
+  "final": "https://www.stark4n6.com/2022/06/cellebrite-ctf-2022-heisenbergs-android.html"
+ },
+ {
+  "url": "https://ctftime.org/task/10366",
+  "status": 200,
+  "final": "https://ctftime.org/task/10366"
+ },
+ {
+  "url": "https://www.sans.org/cyber-ranges/holiday-hack-challenge",
+  "status": 200,
+  "final": "https://www.sans.org/cyber-ranges/holiday-hack-challenge"
+ },
+ {
+  "url": "https://letsdefend.io/",
+  "status": 200,
+  "final": "https://letsdefend.io/"
+ },
+ {
+  "url": "https://cellebrite.com/en/cellebrite-capture-the-flag-september-2023/",
+  "status": 200,
+  "final": "https://cellebrite.com/en/blog/cellebrite-capture-the-flag-september-2023/"
+ },
+ {
+  "url": "https://ctftime.org/task/10351",
+  "status": 200,
+  "final": "https://ctftime.org/task/10351"
+ },
+ {
+  "url": "https://ctftime.org/event/3331/",
+  "status": 200,
+  "final": "https://ctftime.org/event/3331/"
+ },
+ {
+  "url": "https://bakerstreetforensics.com/2023/10/30/huntress-capture-the-flag-a-ctf-marathon/",
+  "status": 200,
+  "final": "https://bakerstreetforensics.com/2023/10/30/huntress-capture-the-flag-a-ctf-marathon/"
+ },
+ {
+  "url": "https://web.archive.org/web/2021/http://forensicscontest.com/contest06/Finalists/",
+  "status": 200,
+  "final": "https://web.archive.org/web/20200221201908/http://forensicscontest.com/contest06/Finalists/"
+ },
+ {
+  "url": "https://cyberdefenders.org/blue-team-labs/",
+  "status": 200,
+  "final": "https://cyberdefenders.org/blue-team-labs/"
+ },
+ {
+  "url": "https://bolisettynihith.github.io/InCTFi20-LookoutFoxy/",
+  "status": 200,
+  "final": "https://bolisettynihith.github.io/InCTFi20-LookoutFoxy/"
+ },
+ {
+  "url": "https://bakerstreetforensics.com/2024/03/12/magnet-virtual-summit-2024-capture-the-flag/",
+  "status": 200,
+  "final": "https://bakerstreetforensics.com/2024/03/12/magnet-virtual-summit-2024-capture-the-flag/"
+ },
+ {
+  "url": "https://github.com/dfrws/dfrws2017-challenge/tree/master/challenge-submissions",
+  "status": 200,
+  "final": "https://github.com/dfrws/dfrws2017-challenge/tree/master/challenge-submissions"
+ },
+ {
+  "url": "https://foi.se/cratectf",
+  "status": 200,
+  "final": "https://foi.se/cratectf"
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=JuEv8UleO0U",
+  "status": 204,
+  "final": "https://www.youtube.com/watch?v=JuEv8UleO0U"
+ },
+ {
+  "url": "https://medium.com/@7a616368/sans-holiday-hack-challenge-2019-1e551b97bf48",
+  "status": 403,
+  "final": ""
+ },
+ {
+  "url": "https://medium.com/@offzone.conf/writeup-in-the-shadows-ac6c87bad4a5",
+  "status": 403,
+  "final": ""
+ },
+ {
+  "url": "https://backdoor.infoseciitr.in/",
+  "status": 522,
+  "final": ""
+ }
+]

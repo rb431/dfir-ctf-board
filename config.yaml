@@ -1,0 +1,10 @@
+site_name: "Security Volition CTF Board"
+brand: "Security Volition"
+brand_url: "https://securityvolition.com"
+base_url: "https://ctf.securityvolition.com"   # planned subdomain — placeholder, not live
+tagline: "Upcoming DFIR, forensics & blue-team CTFs — plus an archive of past challenges with evidence and write-ups."
+window_days: 120
+ctftime_keywords:
+  strong: ["dfir", "incident response", "blue team", "blue-team", "blueteam", "threat hunt", "memory forensic", "memory analysis", "malware analysis", "log analysis", "soc analyst"]
+  forensics: ["forensic", "pcap", "network traffic analysis", "steganography"]
+custom_domain: ctf.securityvolition.com

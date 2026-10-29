@@ -1,0 +1,685 @@
+[
+ {
+  "title": "Hacker's Gambit 2026 (Round 2 \u2013 Grand Finale)",
+  "organizer": "JCOE Cyber Sentinels",
+  "start": "2026-10-30T06:30:00+00:00",
+  "end": "2026-10-31T06:30:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy",
+   "Onsite"
+  ],
+  "where": "Onsite: Jaihind College of Engineering,At Post Kuran, Taluka Junnar, Pune - 410511, Maharashtra, India  (19\u00b009'47.2\"N 73\u00b054'52.2\"E)",
+  "cost": "Restrictions: Prequalified",
+  "url": "https://unstop.com/p/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293",
+  "ctftime": "https://ctftime.org/event/3381/",
+  "weight": 0.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic",
+   "steganography"
+  ]
+ },
+ {
+  "title": "HI Cyber Con 2026 CTF",
+  "organizer": "HiddenInvestigations",
+  "start": "2026-10-30T14:00:00+00:00",
+  "end": "2026-11-01T14:00:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://ctf.hiddeninvestigations.net/",
+  "ctftime": "https://ctftime.org/event/3460/",
+  "weight": 0.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic",
+   "steganography"
+  ]
+ },
+ {
+  "title": "SANS DFIR NetWars \u2014 London",
+  "organizer": "SANS Institute",
+  "start": "2026-11-05T00:00:00+00:00",
+  "end": "2026-11-06T23:59:00+00:00",
+  "status": "dated",
+  "where": "London, UK (in person only)",
+  "cost": "Free with a 4\u20136 day SANS course; paid standalone registration",
+  "tags": [
+   "DFIR",
+   "Threat hunting",
+   "Malware"
+  ],
+  "url": "https://www.sans.org/cyber-ranges/upcoming-netwars-tournament",
+  "source_link": "https://www.sans.org/cyber-security-training-events/london-november-2026",
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "PINK+ CTF 2026",
+  "organizer": "PINK+",
+  "start": "2026-11-06T12:00:00+00:00",
+  "end": "2026-11-09T12:00:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://ctf.pink.bayern/",
+  "ctftime": "https://ctftime.org/event/3331/",
+  "weight": 0.0,
+  "source": "CTFtime",
+  "matched": [
+   "steganography"
+  ]
+ },
+ {
+  "title": "CSCTF 2026",
+  "organizer": "Mirachron",
+  "start": "2026-11-06T13:00:00+00:00",
+  "end": "2026-11-08T13:00:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://2026.chronos-security.ro/",
+  "ctftime": "https://ctftime.org/event/3333/",
+  "weight": 0.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "SpookyCTF 2026",
+  "organizer": "NICC",
+  "start": "2026-11-06T17:00:00+00:00",
+  "end": "2026-11-07T17:00:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://spooky.ctfd.io/",
+  "ctftime": "https://ctftime.org/event/3339/",
+  "weight": 0.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "KDFS Challenge 2026 (digital forensics CTF)",
+  "organizer": "Korea Digital Forensic Society",
+  "start": "2026-11-09T00:00:00+00:00",
+  "end": "2026-11-09T23:59:00+00:00",
+  "status": "dated",
+  "where": "Seoul, KR (onsite at KDFS Winter Conference)",
+  "cost": "Conference registrants only; sign-ups closed Nov 4",
+  "tags": [
+   "DFIR",
+   "Disk"
+  ],
+  "url": "https://www.k-dfs.co.kr/notice/?bmode=view&idx=175126219",
+  "source_link": "https://www.k-dfs.co.kr/notice/?bmode=view&idx=175126219",
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "TVX CTF 2026",
+  "organizer": "Tech Visions",
+  "start": "2026-11-13T10:00:00+00:00",
+  "end": "2026-11-13T20:00:00+00:00",
+  "status": "dated",
+  "level": "dfir",
+  "tags": [
+   "DFIR focus",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Casual",
+  "url": "https://ctf-techvisions.com/",
+  "ctftime": "https://ctftime.org/event/3486/",
+  "weight": 0,
+  "source": "CTFtime",
+  "matched": [
+   "dfir",
+   "incident response",
+   "malware analysis",
+   "forensic"
+  ]
+ },
+ {
+  "title": "WolvCTF 2026",
+  "organizer": "w01verines",
+  "start": "2026-11-13T23:00:00+00:00",
+  "end": "2026-11-15T23:00:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://wolvctf.io/",
+  "ctftime": "https://ctftime.org/event/3049/",
+  "weight": 0.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "InIt CTF",
+  "organizer": "Hackers_In_India",
+  "start": "2026-11-14T15:30:00+00:00",
+  "end": "2026-11-14T23:30:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Casual",
+  "url": "https://hackersinindia.com/init-ctf",
+  "ctftime": "https://ctftime.org/event/3467/",
+  "weight": 0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "SANS DFIR NetWars \u2014 Paris",
+  "organizer": "SANS Institute",
+  "start": "2026-11-19T00:00:00+00:00",
+  "end": "2026-11-20T23:59:00+00:00",
+  "status": "dated",
+  "where": "Paris, FR (in person only)",
+  "cost": "Free with a 4\u20136 day SANS course; paid standalone registration",
+  "tags": [
+   "DFIR",
+   "Threat hunting",
+   "Malware"
+  ],
+  "url": "https://www.sans.org/cyber-ranges/upcoming-netwars-tournament",
+  "source_link": "https://www.sans.org/cyber-security-training-events/paris-november-2026",
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "EyesOpenCTF 7th edition",
+  "organizer": "EyesOpen_Security",
+  "start": "2026-11-20T10:00:00+00:00",
+  "end": "2026-11-22T10:00:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://eyesopensecurity.com/ctf-briefing.html",
+  "ctftime": "https://ctftime.org/event/3419/",
+  "weight": 0.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "Seize da Flaq",
+  "organizer": "Seize da Flaq",
+  "start": "2026-11-21T06:30:00+00:00",
+  "end": "2026-11-22T02:30:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy",
+   "Onsite"
+  ],
+  "where": "Onsite: Mathura, Uttar Pradesh, India",
+  "cost": "Restrictions: Casual",
+  "url": "https://seizedaflaq.cyberonites.com/",
+  "ctftime": "https://ctftime.org/event/3408/",
+  "weight": 0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "Cyber Ninja CTF 2026 - BLACKOUT",
+  "organizer": "OteriHack",
+  "start": "2026-11-21T09:00:00+00:00",
+  "end": "2026-11-22T09:00:00+00:00",
+  "status": "dated",
+  "level": "dfir",
+  "tags": [
+   "DFIR focus",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Individual",
+  "url": "https://www.cyber-ninja-ctf.fr/",
+  "ctftime": "https://ctftime.org/event/3490/",
+  "weight": 0,
+  "source": "CTFtime",
+  "matched": [
+   "dfir"
+  ]
+ },
+ {
+  "title": "Crate-CTF 2026",
+  "organizer": "Crate-CTF",
+  "start": "2026-11-21T13:00:00+00:00",
+  "end": "2026-11-21T21:00:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://foi.se/cratectf",
+  "ctftime": "https://ctftime.org/event/3336/",
+  "weight": 37.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "L3m0n CTF 2026 (Quals)",
+  "organizer": "L3m0n CTF",
+  "start": "2026-11-28T04:30:00+00:00",
+  "end": "2026-11-28T16:30:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://l3m0nctf.xyz/",
+  "ctftime": "https://ctftime.org/event/3485/",
+  "weight": 0.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "CyberNSK2027-Qualifier",
+  "organizer": "siberiansecurityleague",
+  "start": "2026-11-28T09:00:00+00:00",
+  "end": "2026-11-28T21:00:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Academic",
+  "url": "https://quals.sslctf.ru/",
+  "ctftime": "https://ctftime.org/event/3489/",
+  "weight": 0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "BlackHat MEA CTF Final 2026",
+  "organizer": "SAFCSP",
+  "start": "2026-12-01T15:14:59+00:00",
+  "end": "2026-12-03T15:14:59+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy",
+   "Onsite"
+  ],
+  "where": "Onsite: Riyadh, Saudi Arabia",
+  "cost": "Restrictions: Prequalified",
+  "url": "https://blackhatmea.com/capture-the-flag",
+  "ctftime": "https://ctftime.org/event/3386/",
+  "weight": 0.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "niteCTF 2026",
+  "organizer": "Cryptonite",
+  "start": "2026-12-11T12:00:00+00:00",
+  "end": "2026-12-13T12:00:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://nitectf.cryptonitemit.in/",
+  "ctftime": "https://ctftime.org/event/3367/",
+  "weight": 59.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "SANS DFIR NetWars \u2014 Amsterdam",
+  "organizer": "SANS Institute",
+  "start": "2026-12-17T00:00:00+00:00",
+  "end": "2026-12-18T23:59:00+00:00",
+  "status": "dated",
+  "where": "Amsterdam, NL (in person only)",
+  "cost": "Free with a 4\u20136 day SANS course; paid standalone registration",
+  "tags": [
+   "DFIR",
+   "Threat hunting",
+   "Malware"
+  ],
+  "url": "https://www.sans.org/cyber-ranges/upcoming-netwars-tournament",
+  "source_link": "https://www.sans.org/cyber-security-training-events/amsterdam-december-2026",
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "BackdoorCTF 2026",
+  "organizer": "InfoSecIITR",
+  "start": "2026-12-19T12:00:00+00:00",
+  "end": "2026-12-20T12:00:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://backdoor.infoseciitr.in/",
+  "ctftime": "https://ctftime.org/event/3472/",
+  "weight": 77.38,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "GaianSpace Perihelion CTF 2027",
+  "organizer": "GaianSpace",
+  "start": "2027-01-02T18:00:00+00:00",
+  "end": "2027-01-03T18:00:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://gaian.space/ctf",
+  "ctftime": "https://ctftime.org/event/3492/",
+  "weight": 25.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "Guardians 2027 \u2014 blue-team CTF (online qualifier)",
+  "organizer": "Guardians (Slovakia)",
+  "start": "2027-02-01T00:00:00+00:00",
+  "end": "2027-02-14T23:59:00+00:00",
+  "status": "dated",
+  "where": "Online qualifier; finale Feb 25, 2027 in Bratislava",
+  "cost": "Free",
+  "tags": [
+   "Blue team",
+   "DFIR",
+   "Incident response",
+   "SIEM"
+  ],
+  "url": "https://www.guardians.sk/guardians-2027/",
+  "source_link": "https://www.guardians.sk/guardians-2027/",
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "SANS Holiday Hack Challenge 2026: The Pyramid on the Ice",
+  "organizer": "SANS / Counter Hack",
+  "status": "tba",
+  "when_note": "Launch date not announced yet (2025 opened Nov 5). Report deadline Jan 5, 2027.",
+  "where": "Online",
+  "cost": "Free",
+  "tags": [
+   "Various",
+   "Beginner-friendly"
+  ],
+  "url": "https://www.sans.org/cyber-ranges/holiday-hack-challenge",
+  "source_link": "https://www.sans.org/cyber-ranges/holiday-hack-challenge",
+  "start": null,
+  "end": null,
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "Magnet Virtual Summit 2027 CTF",
+  "organizer": "Magnet Forensics",
+  "status": "tba",
+  "when_note": "Summit is Feb 8\u201311, 2027 (online). CTF date not announced; the 2026 CTF ran on the summit's last day.",
+  "where": "Online",
+  "cost": "Free with summit registration (2026 pattern)",
+  "tags": [
+   "Mobile",
+   "iOS",
+   "Android",
+   "Ciphers"
+  ],
+  "url": "https://www.magnetforensics.com/blog/submissions-now-open-to-present-at-magnet-user-summit-magnet-virtual-summit-2027/",
+  "source_link": "https://www.magnetforensics.com/blog/submissions-now-open-to-present-at-magnet-user-summit-magnet-virtual-summit-2027/",
+  "start": null,
+  "end": null,
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "DefCamp \u2014 Decode and Conquer: Forensics CTF",
+  "organizer": "DefCamp / CyberEDU",
+  "status": "tba",
+  "when_note": "Date unconfirmed: the page lists Nov 28\u201329, which looks carried over from an earlier year (DefCamp 2026 runs Nov 19\u201320).",
+  "where": "Online (CyberEDU)",
+  "cost": "Free",
+  "tags": [
+   "Forensics",
+   "MITRE ATT&CK"
+  ],
+  "url": "https://def.camp/competitions/decode-and-conquer-forensics-ctf-challenge/",
+  "source_link": "https://def.camp/competitions/decode-and-conquer-forensics-ctf-challenge/",
+  "start": null,
+  "end": null,
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "The DFIR Report \u2014 DFIR Labs Digital Forensics Challenge",
+  "organizer": "The DFIR Report",
+  "status": "tba",
+  "when_note": "Next date TBD per organizer (last one: Sep 26, 2026). 4 hours, $9.99 ticket.",
+  "where": "Online",
+  "cost": "$9.99",
+  "tags": [
+   "DFIR",
+   "SIEM",
+   "Intrusion"
+  ],
+  "url": "https://dfirlabs.thedfirreport.com/dfirchallenge",
+  "source_link": "https://dfirlabs.thedfirreport.com/dfirchallenge",
+  "start": null,
+  "end": null,
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "BelkaCTF",
+  "organizer": "Belkasoft",
+  "status": "tba",
+  "when_note": "No 2026 edition announced. Last one (#7) ran Jul 25\u201327, 2025.",
+  "where": "Online",
+  "cost": "Free",
+  "tags": [
+   "DFIR",
+   "Disk",
+   "Mobile"
+  ],
+  "url": "https://belkasoft.com/ctf",
+  "source_link": "https://belkasoft.com/ctf",
+  "start": null,
+  "end": null,
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "Cellebrite CTF",
+  "organizer": "Cellebrite",
+  "status": "tba",
+  "when_note": "No public online 2026 date found; 2026 rounds were in-person partner events.",
+  "where": "Varies",
+  "cost": "Free",
+  "tags": [
+   "Mobile",
+   "iOS",
+   "Android"
+  ],
+  "url": "https://ctf.cellebrite.com/login",
+  "source_link": "https://ctf.cellebrite.com/login",
+  "start": null,
+  "end": null,
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "CyberDefenders Blue Team Labs",
+  "organizer": "CyberDefenders",
+  "status": "always_on",
+  "when_note": "Always open, with new labs added regularly",
+  "where": "Online",
+  "cost": "Free tier + paid",
+  "tags": [
+   "Blue team",
+   "DFIR",
+   "Network",
+   "Endpoint"
+  ],
+  "url": "https://cyberdefenders.org/blue-team-labs/",
+  "source_link": "https://cyberdefenders.org/blue-team-labs/",
+  "start": null,
+  "end": null,
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "Blue Team Labs Online",
+  "organizer": "Security Blue Team",
+  "status": "always_on",
+  "when_note": "Always open",
+  "where": "Online",
+  "cost": "Free tier + paid",
+  "tags": [
+   "Blue team",
+   "DFIR",
+   "SOC"
+  ],
+  "url": "https://blueteamlabs.online/",
+  "source_link": "https://blueteamlabs.online/",
+  "start": null,
+  "end": null,
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "XINTRA APT Emulation Labs",
+  "organizer": "XINTRA",
+  "status": "always_on",
+  "when_note": "Always open",
+  "where": "Online",
+  "cost": "Paid",
+  "tags": [
+   "DFIR",
+   "APT",
+   "Cloud"
+  ],
+  "url": "https://www.xintra.org/labs/",
+  "source_link": "https://www.xintra.org/labs/",
+  "start": null,
+  "end": null,
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "Hack The Box Sherlocks",
+  "organizer": "Hack The Box",
+  "status": "always_on",
+  "when_note": "Always open (defensive / DFIR scenarios)",
+  "where": "Online",
+  "cost": "Free tier + paid",
+  "tags": [
+   "DFIR",
+   "Blue team"
+  ],
+  "url": "https://app.hackthebox.com/sherlocks",
+  "source_link": "https://www.hackthebox.com/",
+  "start": null,
+  "end": null,
+  "level": "dfir",
+  "source": "Verified"
+ },
+ {
+  "title": "LetsDefend",
+  "organizer": "LetsDefend",
+  "status": "always_on",
+  "when_note": "Always open (SOC simulator & challenges)",
+  "where": "Online",
+  "cost": "Free tier + paid",
+  "tags": [
+   "SOC",
+   "Blue team"
+  ],
+  "url": "https://letsdefend.io/",
+  "source_link": "https://letsdefend.io/",
+  "start": null,
+  "end": null,
+  "level": "dfir",
+  "source": "Verified"
+ }
+]

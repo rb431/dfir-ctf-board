@@ -1,0 +1,307 @@
+# Past DFIR challenges. Every link here was checked with scripts/check_links.py.
+# Fields: title, year, organizer, scope (tags), event (official page), evidence (list of {label,url}), writeups (list of {author,url}), source
+- title: "BelkaCTF #7: Stranger Dfings"
+  year: 2025
+  organizer: Belkasoft
+  scope: [Windows, Disk]
+  event: https://belkasoft.com/belkactf7/
+  evidence: [{label: "Image download & rules", url: "https://belkasoft.com/belkactf7/info"}]
+  writeups: [{author: "Belkasoft (official)", url: "https://belkasoft.com/belkactf7-writeup"}]
+- title: "BelkaCTF #6: Bogus Bill"
+  year: 2024
+  organizer: Belkasoft
+  scope: [iOS, Mobile]
+  event: https://belkasoft.com/belkactf6/
+  writeups: [{author: "Belkasoft (official)", url: "https://belkasoft.com/belkactf6-writeup"}]
+- title: "BelkaCTF #5: Party Girl—Missing"
+  year: 2022
+  organizer: Belkasoft
+  scope: [Windows, Disk]
+  event: https://belkasoft.com/ctf_july_2022/
+  writeups: [{author: "Belkasoft (official)", url: "https://belkasoft.com/belkactf-jul2022-writeup"}]
+- title: "Magnet Virtual Summit 2026 CTF (powered by Hexordia)"
+  year: 2026
+  organizer: Magnet Forensics / Hexordia
+  scope: [Mobile, Ciphers]
+  event: https://www.magnetforensics.com/blog/magnet-virtual-summit-2026-capture-the-flag/
+  writeups: []
+- title: "Magnet Virtual Summit 2025 CTF — Ciphers"
+  year: 2025
+  organizer: Magnet Forensics / Hexordia
+  scope: [Ciphers]
+  event: https://www.stark4n6.com/2025/01/magnet-virtual-summit-2025-ctf-workshop.html
+  writeups: [{author: "Kevin Pagano", url: "https://www.stark4n6.com/2025/03/magnet-virtual-summit-2025-ctf-ciphers.html"}]
+- title: "Magnet Virtual Summit 2024 CTF — Android"
+  year: 2024
+  organizer: Magnet Forensics
+  scope: [Android, Mobile]
+  event: https://www.magnetforensics.com/blog/magnet-virtual-summit-2024-capture-the-flag/
+  writeups:
+    - {author: "Kevin Pagano", url: "https://www.stark4n6.com/2024/03/magnet-virtual-summit-2024-ctf-android.html"}
+    - {author: "Forensafe", url: "https://forensafe.com/blogs/challenges/magnetctf24_android.html"}
+    - {author: "DFIR101", url: "https://dfir101.wordpress.com/2024/03/19/magnet-forensics-virtual-ctf-2024-android-challenges/"}
+- title: "Magnet Virtual Summit 2024 CTF — iOS"
+  year: 2024
+  organizer: Magnet Forensics
+  scope: [iOS, Mobile]
+  event: https://www.magnetforensics.com/blog/magnet-virtual-summit-2024-capture-the-flag/
+  writeups:
+    - {author: "Kevin Pagano", url: "https://www.stark4n6.com/2024/03/magnet-virtual-summit-2024-ctf-ios.html"}
+    - {author: "Forensafe", url: "https://forensafe.com/blogs/challenges/magnetctf24_ios.html"}
+    - {author: "Doug Metz", url: "https://bakerstreetforensics.com/2024/03/12/magnet-virtual-summit-2024-capture-the-flag/"}
+- title: "Magnet Virtual Summit 2024 CTF — Cipher"
+  year: 2024
+  organizer: Magnet Forensics
+  scope: [Ciphers]
+  event: https://www.magnetforensics.com/blog/magnet-virtual-summit-2024-capture-the-flag/
+  writeups:
+    - {author: "Kevin Pagano", url: "https://www.stark4n6.com/2024/03/magnet-virtual-summit-2024-ctf-cipher.html"}
+    - {author: "Forensafe", url: "https://forensafe.com/blogs/challenges/magnetctf24_cipher.html"}
+    - {author: "Kairos Tay", url: "https://blog.kairostay.com/posts/magnet-virtual-summit-24/"}
+- title: "Magnet Forensics CTF images 2018–2022 (Digital Corpora)"
+  year: 2022
+  organizer: Magnet Forensics / Digital Corpora
+  scope: [Windows, Android, iOS, macOS, Linux, Chromebook]
+  event: https://downloads.digitalcorpora.org/corpora/scenarios/magnet/
+  evidence: [{label: "Images (Digital Corpora)", url: "https://downloads.digitalcorpora.org/corpora/scenarios/magnet/"}]
+  writeups: []
+- title: "Magnet Virtual Summit 2020 CTF — iOS"
+  year: 2020
+  organizer: Magnet Forensics
+  scope: [iOS, Mobile]
+  event: https://drive.google.com/drive/folders/1fb3un5w4UR88oKfHvt1vMgcqSmqvKOlc
+  evidence: [{label: "Images (Google Drive)", url: "https://drive.google.com/drive/folders/1fb3un5w4UR88oKfHvt1vMgcqSmqvKOlc"}]
+  writeups: [{author: "Kevin Pagano", url: "https://www.stark4n6.com/2020/06/magnet-virtual-summit-2020-ctf-ios.html"}]
+- title: "Magnet Virtual Summit 2020 CTF — Memory"
+  year: 2020
+  organizer: Magnet Forensics
+  scope: [Memory, Windows]
+  event: https://drive.google.com/drive/folders/1fb3un5w4UR88oKfHvt1vMgcqSmqvKOlc
+  evidence: [{label: "Images (Google Drive)", url: "https://drive.google.com/drive/folders/1fb3un5w4UR88oKfHvt1vMgcqSmqvKOlc"}]
+  writeups: [{author: "Peter Stewart", url: "https://web.archive.org/web/2021/https://www.petermstewart.net/magnet-virtual-summit-2020-ctf-memory-analysis-write-up/"}]
+- title: "Magnet Virtual Summit 2020 CTF — Android & Egg Hunt"
+  year: 2020
+  organizer: Magnet Forensics
+  scope: [Android, Mobile]
+  event: https://drive.google.com/drive/folders/1fb3un5w4UR88oKfHvt1vMgcqSmqvKOlc
+  evidence: [{label: "Images (Google Drive)", url: "https://drive.google.com/drive/folders/1fb3un5w4UR88oKfHvt1vMgcqSmqvKOlc"}]
+  writeups:
+    - {author: "DFIR_300 (Android)", url: "https://dfir300.blogspot.com/2020/06/mvs2020ctf-write-up-android.html"}
+    - {author: "DFIR_300 (Egg Hunt)", url: "https://dfir300.blogspot.com/2020/06/mvs2020ctf-write-up-egg-hunt.html"}
+- title: "Cellebrite CTF 2023"
+  year: 2023
+  organizer: Cellebrite
+  scope: [iOS, Android, Mobile]
+  event: https://cellebrite.com/en/cellebrite-capture-the-flag-september-2023/
+  writeups:
+    - {author: "Kevin Pagano (Abe)", url: "https://www.stark4n6.com/2023/10/cellebrite-ctf-2023-abe.html"}
+    - {author: "Kevin Pagano (Felix)", url: "https://www.stark4n6.com/2023/10/cellebrite-ctf-2023-felix.html"}
+    - {author: "Forensafe (Sharon)", url: "https://forensafe.com/blogs/challenges/CellebriteCtfSharon.html"}
+- title: "Cellebrite CTF 2022"
+  year: 2022
+  organizer: Cellebrite
+  scope: [iOS, Android, Windows]
+  event: https://cellebrite.com/en/blog/final-ctf-2022-round-up/
+  evidence: [{label: "Datasets (NIST CFReDS, linked by Cellebrite)", url: "https://cfreds.nist.gov/all/Cellebrite/Cellebrite2021CTF"}]
+  writeups:
+    - {author: "Cellebrite (official, 4 parts)", url: "https://cellebrite.com/en/blog/final-ctf-2022-round-up/"}
+    - {author: "Kevin Pagano (Heisenberg Android)", url: "https://www.stark4n6.com/2022/06/cellebrite-ctf-2022-heisenbergs-android.html"}
+- title: "Huntress CTF 2023"
+  year: 2023
+  organizer: Huntress
+  scope: [Malware, Forensics, Various]
+  event: https://huntress.ctf.games/
+  writeups: [{author: "Doug Metz", url: "https://bakerstreetforensics.com/2023/10/30/huntress-capture-the-flag-a-ctf-marathon/"}]
+- title: "DEF CON DFIR CTF 2019 (Champlain DFA)"
+  year: 2019
+  organizer: Champlain College DFA
+  scope: [Windows, Memory, Android, Linux]
+  event: https://web.archive.org/web/2021/https://defcon2019.ctfd.io/
+  writeups: [{author: "Peter Stewart (memory)", url: "https://web.archive.org/web/2021/https://www.petermstewart.net/defcon-2019-dfir-ctf-memory-forensics-write-up/"}]
+- title: "13Cubed Mini Memory CTF"
+  year: 2020
+  organizer: 13Cubed (Richard Davis)
+  scope: [Memory]
+  event: https://www.youtube.com/watch?v=JuEv8UleO0U
+  writeups: [{author: "Peter Stewart", url: "https://web.archive.org/web/2021/https://www.petermstewart.net/13cubed-mini-memory-ctf-write-up/"}]
+- title: "MemLabs (6 memory forensics labs)"
+  year: 2020
+  organizer: Abhiram Kumar
+  scope: [Memory]
+  event: https://github.com/stuxnet999/MemLabs
+  evidence: [{label: "Lab dumps (GitHub)", url: "https://github.com/stuxnet999/MemLabs"}]
+  writeups: []
+- title: "InCTF Internationals 2020 — Investigation (memory)"
+  year: 2020
+  organizer: team bi0s
+  scope: [Memory]
+  event: https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/Investigation
+  evidence: [{label: "Challenge files (GitHub)", url: "https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/Investigation"}]
+  writeups: [{author: "Abhiram Kumar", url: "https://stuxnet999.github.io/dfir/inctfi-2020-investigation/"}]
+- title: "InCTF Internationals 2020 — LOGarithm"
+  year: 2020
+  organizer: team bi0s
+  scope: [Memory, Logs]
+  event: https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/LOGarithm
+  evidence: [{label: "Challenge files (GitHub)", url: "https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/LOGarithm"}]
+  writeups: [{author: "Abhiram Kumar", url: "https://stuxnet999.github.io/dfir/inctfi-2020-logarithm/"}]
+- title: "InCTF Internationals 2020 — Lookout Foxy"
+  year: 2020
+  organizer: team bi0s
+  scope: [Disk, Browser]
+  event: https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/Lookout%20Foxy
+  evidence: [{label: "Challenge files (GitHub)", url: "https://github.com/teambi0s/InCTFi/tree/master/2020/Forensics/Lookout%20Foxy"}]
+  writeups: [{author: "B Nihith", url: "https://bolisettynihith.github.io/InCTFi20-LookoutFoxy/"}]
+- title: "HackTM CTF Quals 2020 — Find My Pass"
+  year: 2020
+  organizer: HackTM
+  scope: [Memory]
+  event: https://ctftime.org/task/10351
+  writeups: [{author: "Abhiram Kumar", url: "https://stuxnet999.github.io/dfir/hacktm-ctf-2020-find-my-pass/"}]
+- title: "HackTM CTF Quals 2020 — Strange PCAP"
+  year: 2020
+  organizer: HackTM
+  scope: [Network, PCAP]
+  event: https://ctftime.org/task/10366
+  writeups: [{author: "bi0s", url: "https://blog.bi0s.in/2020/02/10/Forensics/StrangePCAP-HackTM/"}]
+- title: "Defenit CTF 2020 — USB 2"
+  year: 2020
+  organizer: Defenit
+  scope: [Windows, Registry, Amcache]
+  event: https://ctftime.org/task/11844
+  writeups: [{author: "Abhiram Kumar", url: "https://stuxnet999.github.io/dfir/defenitctf-2020-usb2/"}]
+- title: "Google CTF 2019 — Home Computer"
+  year: 2019
+  organizer: Google
+  scope: [NTFS, Disk]
+  event: https://ctftime.org/task/8818
+  writeups: [{author: "Cerberus", url: "https://ctftime.org/writeup/15820"}]
+- title: "DF Challenge 2020 — I can't remember my password"
+  year: 2020
+  organizer: KIISC (Korea)
+  scope: [Disk]
+  event: https://www.dfchallenge.org/techwinners/2020
+  writeups: [{author: "Forensicator", url: "https://forensic8or.blogspot.com/2020/07/i-cant-remember-my-password.html"}]
+- title: "DFRWS 2018 Challenge — IoT"
+  year: 2018
+  organizer: DFRWS
+  scope: [IoT]
+  event: https://github.com/dfrws/dfrws2018-challenge
+  evidence: [{label: "Evidence (GitHub)", url: "https://github.com/dfrws/dfrws2018-challenge"}]
+  writeups: [{author: "Submissions", url: "https://github.com/dfrws/dfrws2018-challenge/tree/master/challenge-submissions"}]
+- title: "DFRWS 2017 Challenge — IoT"
+  year: 2017
+  organizer: DFRWS
+  scope: [IoT]
+  event: https://github.com/dfrws/dfrws2017-challenge
+  evidence: [{label: "Evidence (GitHub)", url: "https://github.com/dfrws/dfrws2017-challenge"}]
+  writeups: [{author: "Submissions", url: "https://github.com/dfrws/dfrws2017-challenge/tree/master/challenge-submissions"}]
+- title: "DFRWS 2007 Challenge — File carving"
+  year: 2007
+  organizer: DFRWS
+  scope: [File carving]
+  event: https://github.com/dfrws/dfrws2007-challenge
+  evidence: [{label: "Evidence (GitHub)", url: "https://github.com/dfrws/dfrws2007-challenge"}]
+  writeups: [{author: "Submissions", url: "https://github.com/dfrws/dfrws2007-challenge/tree/master/challenge-submissions"}]
+- title: "NIST CFReDS — Hacking Case"
+  year: 2018
+  organizer: NIST
+  scope: [Windows, Disk]
+  event: https://cfreds-archive.nist.gov/Hacking_Case.html
+  evidence: [{label: "Image (CFReDS)", url: "https://cfreds-archive.nist.gov/Hacking_Case.html"}]
+  writeups: []
+- title: "NIST CFReDS — Data Leakage Case"
+  year: 2015
+  organizer: NIST
+  scope: [Windows, Insider threat]
+  event: https://cfreds-archive.nist.gov/data_leakage_case/data-leakage-case.html
+  evidence: [{label: "Images (CFReDS)", url: "https://cfreds-archive.nist.gov/data_leakage_case/data-leakage-case.html"}]
+  writeups: []
+- title: "Ali Hadi DFIR Challenges #1–#7"
+  year: 2011
+  organizer: Ali Hadi
+  scope: [Windows, Linux]
+  event: https://www.ashemery.com/dfir.html
+  evidence: [{label: "Images (ashemery.com)", url: "https://www.ashemery.com/dfir.html"}]
+  writeups: [{author: "Joseph Moronwi (#1 Web Server)", url: "https://digitalinvestigator.blogspot.com/2023/09/linux-web-server-forensics-dr-ali-hadis.html"}]
+- title: "SANS Holiday Hack Challenge 2019 (KringleCon 2)"
+  year: 2019
+  organizer: SANS / Counter Hack
+  scope: [Various, Logs]
+  event: https://www.holidayhackchallenge.com/2019/
+  writeups: [{author: "Zach", url: "https://medium.com/@7a616368/sans-holiday-hack-challenge-2019-1e551b97bf48"}]
+- title: "SANS Holiday Hack Challenge 2018 (KringleCon)"
+  year: 2018
+  organizer: SANS / Counter Hack
+  scope: [Various]
+  event: https://www.holidayhackchallenge.com/2018/
+  writeups: [{author: "Winning answers", url: "https://www.holidayhackchallenge.com/2018/winners_answers.html"}]
+- title: "SANS DFIRCon 2013 APT Memory & Malware Challenge"
+  year: 2013
+  organizer: SANS
+  scope: [Memory, Malware]
+  event: https://web.archive.org/web/2021/https://digital-forensics.sans.org/blog/2014/02/08/apt-memory-and-malware-analysis-solution
+  writeups: [{author: "Rob Lee (solution)", url: "https://web.archive.org/web/2021/https://digital-forensics.sans.org/blog/2014/02/08/apt-memory-and-malware-analysis-solution"}]
+- title: "LMG Network Forensics Puzzle Contests"
+  year: 2011
+  organizer: LMG Security
+  scope: [Network, PCAP]
+  event: https://web.archive.org/web/2021/http://forensicscontest.com/puzzles
+  evidence: [{label: "PCAPs & puzzles", url: "https://web.archive.org/web/2021/http://forensicscontest.com/puzzles"}]
+  writeups: [{author: "Ann's Aurora finalists", url: "https://web.archive.org/web/2021/http://forensicscontest.com/contest06/Finalists/"}]
+- title: "Malware Traffic Analysis exercises"
+  year: 2026
+  organizer: Brad Duncan
+  scope: [Network, PCAP, Malware]
+  event: https://www.malware-traffic-analysis.net/training-exercises.html
+  evidence: [{label: "PCAPs (each exercise)", url: "https://www.malware-traffic-analysis.net/training-exercises.html"}]
+  writeups: [{author: "Answers posted per exercise", url: "https://www.malware-traffic-analysis.net/training-exercises.html"}]
+- title: "CyberDefenders — GrabThePhisher"
+  year: 2022
+  organizer: CyberDefenders
+  scope: [Phishing, Web]
+  event: https://cyberdefenders.org/blueteam-ctf-challenges/grabthephisher/
+  writeups: [{author: "N00b_H@ck3r", url: "https://beginninghacking.net/2022/07/25/cyberdefenders-grabthephisher/"}]
+- title: "Lance Mueller Forensic Practical #1"
+  year: 2008
+  organizer: Lance Mueller
+  scope: [Disk, Network]
+  event: https://web.archive.org/web/2021/http://www.forensickb.com/2008/01/forensic-practical.html
+  writeups: [{author: "Lance Mueller (answers)", url: "https://web.archive.org/web/2021/http://www.forensickb.com/2008/01/forensic-practical-1-answers.html"}]
+- title: "Foxton Forensics Cyber Challenge — Nov 2019"
+  year: 2019
+  organizer: Foxton Forensics
+  scope: [Browser]
+  event: https://challenges.foxtonforensics.com/
+  writeups: [{author: "Foxton (walkthrough)", url: "https://www.foxtonforensics.com/blog/post/cyber-challenge-walkthrough-nov-2019"}]
+- title: "BSidesSF 2019 — goodluks3"
+  year: 2019
+  organizer: BSidesSF
+  scope: [Disk, Memory, LUKS]
+  event: https://ctftime.org/task/7756
+  writeups: [{author: "TeamRocketIST", url: "https://teamrocketist.github.io/2019/03/05/Forensics-BsidesSF-2019-goodluks3/"}]
+- title: "Securinets Quals 2019 — Rare to Win"
+  year: 2019
+  organizer: Securinets
+  scope: [Memory]
+  event: https://ctftime.org/task/7855
+  writeups: [{author: "Jullle3", url: "https://ctftime.org/writeup/14438"}]
+- title: "CTFZone Quals 2019 — In the Shadows"
+  year: 2019
+  organizer: BI.ZONE
+  scope: [NTFS]
+  event: https://ctftime.org/task/10822
+  writeups: [{author: "OFFZONE", url: "https://medium.com/@offzone.conf/writeup-in-the-shadows-ac6c87bad4a5"}]
+- title: "Pwn2Win CTF 2019 — Cloud Admin"
+  year: 2019
+  organizer: Epic Leet Team
+  scope: [Memory]
+  event: https://ctftime.org/task/9720
+  writeups: [{author: "Khaled Nassar", url: "https://rootfs.eu/pwn2win2019-cloud-admin/"}]
+- title: "The DFIR Report — DFIR Labs Digital Forensics Challenge 2026"
+  year: 2026
+  organizer: The DFIR Report
+  scope: [SIEM, Intrusion, Windows]
+  event: https://thedfirreport.com/products/dfir-labs/
+  writeups: []
+  note: "Case now available to DFIR Labs subscribers (paid)."

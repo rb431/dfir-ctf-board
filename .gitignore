@@ -1,0 +1,14 @@
+# virtualenvs / python
+.venv*/
+venv/
+__pycache__/
+*.pyc
+# secrets
+.env
+.env.*
+*.pem
+*.key
+secrets*
+# scratch
+data/raw/
+preview-*.png

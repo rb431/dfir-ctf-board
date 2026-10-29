@@ -1,0 +1,151 @@
+# Hand-verified vendor/community DFIR events. Only put a date in `start`/`end` if the organizer's own page states it.
+# status: dated | tba | always_on
+- title: "SANS DFIR NetWars — London"
+  organizer: SANS Institute
+  start: 2026-11-05
+  end: 2026-11-06
+  status: dated
+  where: "London, UK (in person only)"
+  cost: "Free with a 4–6 day SANS course; paid standalone registration"
+  tags: [DFIR, Threat hunting, Malware]
+  url: https://www.sans.org/cyber-ranges/upcoming-netwars-tournament
+  source_link: https://www.sans.org/cyber-security-training-events/london-november-2026
+- title: "KDFS Challenge 2026 (digital forensics CTF)"
+  organizer: Korea Digital Forensic Society
+  start: 2026-11-09
+  end: 2026-11-09
+  status: dated
+  where: "Seoul, KR (onsite at KDFS Winter Conference)"
+  cost: "Conference registrants only; sign-ups closed Nov 4"
+  tags: [DFIR, Disk]
+  url: https://www.k-dfs.co.kr/notice/?bmode=view&idx=175126219
+  source_link: https://www.k-dfs.co.kr/notice/?bmode=view&idx=175126219
+- title: "SANS DFIR NetWars — Paris"
+  organizer: SANS Institute
+  start: 2026-11-19
+  end: 2026-11-20
+  status: dated
+  where: "Paris, FR (in person only)"
+  cost: "Free with a 4–6 day SANS course; paid standalone registration"
+  tags: [DFIR, Threat hunting, Malware]
+  url: https://www.sans.org/cyber-ranges/upcoming-netwars-tournament
+  source_link: https://www.sans.org/cyber-security-training-events/paris-november-2026
+- title: "SANS DFIR NetWars — Amsterdam"
+  organizer: SANS Institute
+  start: 2026-12-17
+  end: 2026-12-18
+  status: dated
+  where: "Amsterdam, NL (in person only)"
+  cost: "Free with a 4–6 day SANS course; paid standalone registration"
+  tags: [DFIR, Threat hunting, Malware]
+  url: https://www.sans.org/cyber-ranges/upcoming-netwars-tournament
+  source_link: https://www.sans.org/cyber-security-training-events/amsterdam-december-2026
+- title: "Guardians 2027 — blue-team CTF (online qualifier)"
+  organizer: Guardians (Slovakia)
+  start: 2027-02-01
+  end: 2027-02-14
+  status: dated
+  where: "Online qualifier; finale Feb 25, 2027 in Bratislava"
+  cost: Free
+  tags: [Blue team, DFIR, Incident response, SIEM]
+  url: https://www.guardians.sk/guardians-2027/
+  source_link: https://www.guardians.sk/guardians-2027/
+- title: "SANS Holiday Hack Challenge 2026: The Pyramid on the Ice"
+  organizer: SANS / Counter Hack
+  status: tba
+  when_note: "Launch date not announced yet (2025 opened Nov 5). Report deadline Jan 5, 2027."
+  where: Online
+  cost: Free
+  tags: [Various, Beginner-friendly]
+  url: https://www.sans.org/cyber-ranges/holiday-hack-challenge
+  source_link: https://www.sans.org/cyber-ranges/holiday-hack-challenge
+- title: "Magnet Virtual Summit 2027 CTF"
+  organizer: Magnet Forensics
+  status: tba
+  when_note: "Summit is Feb 8–11, 2027 (online). CTF date not announced; the 2026 CTF ran on the summit's last day."
+  where: Online
+  cost: "Free with summit registration (2026 pattern)"
+  tags: [Mobile, iOS, Android, Ciphers]
+  url: https://www.magnetforensics.com/blog/submissions-now-open-to-present-at-magnet-user-summit-magnet-virtual-summit-2027/
+  source_link: https://www.magnetforensics.com/blog/submissions-now-open-to-present-at-magnet-user-summit-magnet-virtual-summit-2027/
+- title: "DefCamp — Decode and Conquer: Forensics CTF"
+  organizer: DefCamp / CyberEDU
+  status: tba
+  when_note: "Date unconfirmed: the page lists Nov 28–29, which looks carried over from an earlier year (DefCamp 2026 runs Nov 19–20)."
+  where: "Online (CyberEDU)"
+  cost: Free
+  tags: [Forensics, MITRE ATT&CK]
+  url: https://def.camp/competitions/decode-and-conquer-forensics-ctf-challenge/
+  source_link: https://def.camp/competitions/decode-and-conquer-forensics-ctf-challenge/
+- title: "The DFIR Report — DFIR Labs Digital Forensics Challenge"
+  organizer: The DFIR Report
+  status: tba
+  when_note: "Next date TBD per organizer (last one: Sep 26, 2026). 4 hours, $9.99 ticket."
+  where: Online
+  cost: "$9.99"
+  tags: [DFIR, SIEM, Intrusion]
+  url: https://dfirlabs.thedfirreport.com/dfirchallenge
+  source_link: https://dfirlabs.thedfirreport.com/dfirchallenge
+- title: "BelkaCTF"
+  organizer: Belkasoft
+  status: tba
+  when_note: "No 2026 edition announced. Last one (#7) ran Jul 25–27, 2025."
+  where: Online
+  cost: Free
+  tags: [DFIR, Disk, Mobile]
+  url: https://belkasoft.com/ctf
+  source_link: https://belkasoft.com/ctf
+- title: "Cellebrite CTF"
+  organizer: Cellebrite
+  status: tba
+  when_note: "No public online 2026 date found; 2026 rounds were in-person partner events."
+  where: "Varies"
+  cost: Free
+  tags: [Mobile, iOS, Android]
+  url: https://ctf.cellebrite.com/login
+  source_link: https://ctf.cellebrite.com/login
+- title: "CyberDefenders Blue Team Labs"
+  organizer: CyberDefenders
+  status: always_on
+  when_note: "Always open, with new labs added regularly"
+  where: Online
+  cost: "Free tier + paid"
+  tags: [Blue team, DFIR, Network, Endpoint]
+  url: https://cyberdefenders.org/blue-team-labs/
+  source_link: https://cyberdefenders.org/blue-team-labs/
+- title: "Blue Team Labs Online"
+  organizer: Security Blue Team
+  status: always_on
+  when_note: "Always open"
+  where: Online
+  cost: "Free tier + paid"
+  tags: [Blue team, DFIR, SOC]
+  url: https://blueteamlabs.online/
+  source_link: https://blueteamlabs.online/
+- title: "XINTRA APT Emulation Labs"
+  organizer: XINTRA
+  status: always_on
+  when_note: "Always open"
+  where: Online
+  cost: Paid
+  tags: [DFIR, APT, Cloud]
+  url: https://www.xintra.org/labs/
+  source_link: https://www.xintra.org/labs/
+- title: "Hack The Box Sherlocks"
+  organizer: Hack The Box
+  status: always_on
+  when_note: "Always open (defensive / DFIR scenarios)"
+  where: Online
+  cost: "Free tier + paid"
+  tags: [DFIR, Blue team]
+  url: https://app.hackthebox.com/sherlocks
+  source_link: https://www.hackthebox.com/
+- title: "LetsDefend"
+  organizer: LetsDefend
+  status: always_on
+  when_note: "Always open (SOC simulator & challenges)"
+  where: Online
+  cost: "Free tier + paid"
+  tags: [SOC, Blue team]
+  url: https://letsdefend.io/
+  source_link: https://letsdefend.io/
