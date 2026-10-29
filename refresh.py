@@ -156,6 +156,7 @@ def page(title, active, body, desc, path):
     c = CFG; canon = c["base_url"].rstrip("/") + "/" + path
     nav = "".join(f'<a href="{h}"{" aria-current=page" if k==active else ""}>{t}</a>' for k, h, t in [("up","index.html","Upcoming"),("arc","archive.html","Archive"),("about","about.html","About")])
     return f'''<!doctype html><html lang="en"><head>
+<meta name="impact-site-verification" value="9b114c7c-4e3f-418d-93a8-f9922d272b54">
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
