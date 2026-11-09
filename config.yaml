@@ -16,3 +16,10 @@ affiliates:
   htb_academy: https://hacktheboxltd.sjv.io/gRnmL9   # academy.hackthebox.com
   htb_ctf: https://hacktheboxltd.sjv.io/oNKxPm       # ctf.hackthebox.com; accepts ?u=<urlencoded deep link>
   htb_ctf_hosts: [ctf.hackthebox.com]
+# Blog (securityvolition.com) — not an affiliate link
+blog:
+  title: "Security Volition Blog"
+  url: https://securityvolition.com/blog/
+  description: "Practitioner notes on incident response, threat trends, and the defensive controls that actually reduce damage."
+  feed_url: https://securityvolition.com/blog/feed.xml
+

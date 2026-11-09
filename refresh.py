@@ -7,7 +7,7 @@
 
 Only dependency: PyYAML (pip install pyyaml). Output: public/ (static, deploy as-is).
 """
-import argparse, datetime as dt, html, json, re, sys, time, urllib.parse, urllib.request, concurrent.futures as cf
+import argparse, datetime as dt, html, json, re, sys, time, urllib.parse, urllib.request, concurrent.futures as cf, xml.etree.ElementTree as ET
 from pathlib import Path
 import yaml
 
@@ -150,6 +150,67 @@ def train_box():
   </ul>
   <small>We may earn a commission if you sign up through these links. <a href="about.html#disclosure">Disclosure</a></small>
 </aside>'''
+
+def fetch_blog_posts(limit=3):
+    """Pull latest posts from the Atom/RSS feed. Returns [] on any failure."""
+    blog = CFG.get("blog") or {}
+    feed_url = blog.get("feed_url")
+    if not feed_url:
+        return []
+    try:
+        req = urllib.request.Request(feed_url, headers={"User-Agent": UA})
+        raw = urllib.request.urlopen(req, timeout=15).read()
+        root = ET.fromstring(raw)
+        # Atom
+        ns = {"a": "http://www.w3.org/2005/Atom"}
+        entries = root.findall("a:entry", ns)
+        posts = []
+        if entries:
+            for e in entries[:limit]:
+                title = (e.findtext("a:title", default="", namespaces=ns) or "").strip()
+                href = ""
+                for link in e.findall("a:link", ns):
+                    rel = link.get("rel") or "alternate"
+                    if rel == "alternate" and link.get("href"):
+                        href = link.get("href"); break
+                if not href:
+                    link = e.find("a:link", ns)
+                    href = (link.get("href") if link is not None else "") or ""
+                if title and href:
+                    posts.append({"title": title, "url": href})
+            return posts
+        # RSS 2.0 fallback
+        channel = root.find("channel")
+        if channel is not None:
+            for item in channel.findall("item")[:limit]:
+                title = (item.findtext("title") or "").strip()
+                href = (item.findtext("link") or "").strip()
+                if title and href:
+                    posts.append({"title": title, "url": href})
+            return posts
+    except Exception as e:
+        print(f"Blog feed fetch failed ({e}); showing title and line only", file=sys.stderr)
+    return []
+
+def blog_box(posts=None):
+    blog = CFG.get("blog") or {}
+    if not blog.get("url"):
+        return ""
+    posts = posts if posts is not None else []
+    recent = ""
+    if posts:
+        items = "".join(
+            f'<li><a href="{esc(p["url"])}" rel="noopener">{esc(p["title"])}</a></li>'
+            for p in posts
+        )
+        recent = f'<p class="blog-recent-label">Recent posts</p><ul class="blog-recent">{items}</ul>'
+    return f'''<aside class="blog" aria-label="Security Volition Blog">
+  <h2>From the Security Volition Blog</h2>
+  <p class="blog-lead"><a href="{esc(blog["url"])}" rel="noopener">{esc(blog.get("title", "Security Volition Blog"))}</a> — {esc(blog.get("description", ""))}</p>
+  {recent}
+  <p class="blog-more"><a href="{esc(blog["url"])}" rel="noopener">Visit the blog →</a></p>
+</aside>'''
+
 def newsletter(small=False):
     url = esc(CFG["newsletter_url"]); fid = esc(CFG["beehiiv_form_id"])
     embed = f'<script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="{fid}"></script>'
@@ -175,7 +236,9 @@ DISCLOSURE = '''<section class="disclosure" id="disclosure"><h2>Affiliate disclo
 
 def page(title, active, body, desc, path):
     c = CFG; canon = c["base_url"].rstrip("/") + "/" + path
+    blog_url = esc((c.get("blog") or {}).get("url") or "https://securityvolition.com/blog/")
     nav = "".join(f'<a href="{h}"{" aria-current=page" if k==active else ""}>{t}</a>' for k, h, t in [("up","index.html","Upcoming"),("arc","archive.html","Archive"),("about","about.html","About")])
+    nav += f'<a href="{blog_url}" rel="noopener">Blog</a>'
     return f'''<!doctype html><html lang="en"><head>
 <meta name="impact-site-verification" value="9b114c7c-4e3f-418d-93a8-f9922d272b54">
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -194,7 +257,7 @@ def page(title, active, body, desc, path):
 </div></header>
 <main class="wrap">{body}</main>
 <footer><div class="wrap">
-<p>A <a href="{esc(c["brand_url"])}">{esc(c["brand"])}</a> project · Data from <a href="https://ctftime.org/">CTFtime</a>, organizer pages and <a href="https://aboutdfir.com/education/challenges-ctfs/">AboutDFIR</a> · Last built {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} UTC</p>
+<p>A <a href="{esc(c["brand_url"])}">{esc(c["brand"])}</a> project · <a href="{blog_url}" rel="noopener">Blog</a> · Data from <a href="https://ctftime.org/">CTFtime</a>, organizer pages and <a href="https://aboutdfir.com/education/challenges-ctfs/">AboutDFIR</a> · Last built {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} UTC</p>
 <p>Some links are affiliate links. <a href="about.html#disclosure">Affiliate disclosure</a></p></div></footer>
 </body></html>'''
 
@@ -209,7 +272,8 @@ def build(offline=False):
 <script>document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filters button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('#dated .card').forEach(c=>c.hidden=!(b.dataset.f==='all'||c.dataset.level===b.dataset.f));});</script>'''
     hero = f'''<section class="hero"><h1>DFIR &amp; blue-team CTFs, in one place.</h1><p>{esc(CFG["tagline"])}</p>
 <p class="stats"><b>{len(dated)}</b> dated events in the next {CFG["window_days"]} days · <b>{n_dfir}</b> DFIR-focused · <b>{len(arch)}</b> archived challenges</p></section>'''
-    body = hero + train_box() + SPONSOR + f'''<h2 id="dated">Upcoming — confirmed dates</h2>
+    posts = fetch_blog_posts(3)
+    body = hero + train_box() + blog_box(posts) + SPONSOR + f'''<h2 id="dated">Upcoming — confirmed dates</h2>
 <p class="note">Times for CTFtime events are in UTC. "Forensics category" = general CTF that lists forensics challenges. Last CTFtime pull: {esc((fetched or "")[:16].replace("T"," "))} UTC.</p>{filt}
 <div class="list" id="dated">{"".join(event_card(e) for e in dated)}</div>
 <h2>Announced, date TBA</h2><p class="note">Recurring events whose next date isn't confirmed by the organizer yet.</p>
