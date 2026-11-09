@@ -7,7 +7,7 @@
 
 Only dependency: PyYAML (pip install pyyaml). Output: public/ (static, deploy as-is).
 """
-import argparse, datetime as dt, html, json, re, sys, time, urllib.request, concurrent.futures as cf
+import argparse, datetime as dt, html, json, re, sys, time, urllib.parse, urllib.request, concurrent.futures as cf
 from pathlib import Path
 import yaml
 
@@ -16,6 +16,16 @@ DATA, OUT = ROOT / "data", ROOT / "public"
 UA = "Mozilla/5.0 (compatible; SecurityVolitionCTFBoard/0.1; +https://ctf.securityvolition.com)"
 CFG = yaml.safe_load((ROOT / "config.yaml").read_text())
 esc = lambda s: html.escape(str(s or ""), quote=True)
+AFF = CFG.get("affiliates", {})
+AFF_ATTRS = 'rel="sponsored noopener" target="_blank"'
+
+def affiliate_url(url):
+    """Route ctf.hackthebox.com links through the HTB CTF affiliate link (deep link via ?u=).
+    Returns (href, is_affiliate)."""
+    host = urllib.parse.urlsplit(url or "").hostname or ""
+    if AFF.get("htb_ctf") and host in AFF.get("htb_ctf_hosts", []):
+        return f'{AFF["htb_ctf"]}?u={urllib.parse.quote(url, safe="")}', True
+    return url, False
 
 # ---------------------------------------------------------------- CTFtime
 def fetch_ctftime(offline=False):
@@ -99,11 +109,14 @@ def event_card(ev):
     badge = {"dated": "", "tba": '<span class="badge tba">Date TBA</span>', "always_on": '<span class="badge on">Always on</span>'}[ev["status"]]
     if ev.get("ctftime"): src = f'<a href="{esc(ev["ctftime"])}" rel="noopener">CTFtime listing</a>'
     else: src = f'<a href="{esc(ev.get("source_link") or ev["url"])}" rel="noopener">verified source</a>'
+    href, is_aff = affiliate_url(ev["url"])
+    attrs = AFF_ATTRS if is_aff else 'rel="noopener"'
+    aff_mark = ' <span class="aff-mark">(affiliate link)</span>' if is_aff else ""
     month = f'<div class="cal"><b>{ev["start"]:%b}</b><span>{ev["start"]:%-d}</span></div>' if ev["status"] == "dated" else '<div class="cal tbd"><b>—</b><span>?</span></div>'
     return f'''<article class="card {esc(ev.get("level"))}" data-level="{esc(ev.get("level"))}">
   {month}
   <div class="body">
-    <h3><a href="{esc(ev["url"])}" rel="noopener">{esc(ev["title"])}</a> {badge}</h3>
+    <h3><a href="{esc(href)}" {attrs}>{esc(ev["title"])}</a>{aff_mark} {badge}</h3>
     <p class="when">{when}</p>
     <p class="meta">{esc(ev.get("organizer"))} · {esc(ev.get("where"))} · {esc(ev.get("cost"))} · {src}</p>
     <div class="tags">{tag_html(ev.get("tags", []))}</div>
@@ -127,11 +140,15 @@ SPONSOR = '''<aside class="sponsor placeholder" aria-label="Sponsor slot">
   <span class="ph-label">PLACEHOLDER · Sponsor banner (728×90 / responsive)</span>
   <p>Your DFIR tool or training here. <a href="mailto:sponsor@securityvolition.com">Sponsor this board</a> <small>(placeholder contact)</small></p>
 </aside>'''
-AFFIL = '''<aside class="affil placeholder" aria-label="Affiliate slot">
-  <span class="ph-label">PLACEHOLDER · Affiliate links — not live, no programs joined yet</span>
-  <ul><li>Practice platform (e.g. a blue-team labs partner) — <em>link TBD</em></li>
-  <li>Training / cert partner — <em>link TBD</em></li></ul>
-  <small>Disclosure text goes here once real affiliate links are added.</small>
+def train_box():
+    if not (AFF.get("htb_academy") and AFF.get("htb_ctf")): return ""
+    return f'''<aside class="train" aria-label="Train for DFIR CTFs (affiliate links)">
+  <h2>Train for DFIR CTFs <span class="aff-label">Affiliate links</span></h2>
+  <ul>
+  <li><a href="{esc(AFF["htb_academy"])}" {AFF_ATTRS}>HTB Academy</a> — self-paced courses from Hack The Box, including SOC, log-analysis and digital-forensics modules; free and paid tiers.</li>
+  <li><a href="{esc(AFF["htb_ctf"])}" {AFF_ATTRS}>HTB CTF</a> — Hack The Box's CTF platform, which hosts public and team competitions that often include forensics challenges.</li>
+  </ul>
+  <small>We may earn a commission if you sign up through these links. <a href="about.html#disclosure">Disclosure</a></small>
 </aside>'''
 def newsletter(small=False):
     url = esc(CFG["newsletter_url"]); fid = esc(CFG["beehiiv_form_id"])
@@ -151,6 +168,10 @@ def newsletter(small=False):
 ABOUT = '''<section class="about" id="about"><h2>About</h2>
 <p><strong>Security Volition CTF Board</strong> is a free, community-run calendar of digital forensics &amp; incident response (DFIR), forensics and blue-team challenges, plus an archive of past challenges with links to their evidence files and public write-ups. It is built by a DFIR incident response leader for the community: no hype, no invented dates. Events from CTFtime are refreshed automatically; vendor and community events are checked against the organizer's own page, and anything without a confirmed date is clearly marked <em>TBA</em>.</p>
 <p>Spotted a missing CTF or a broken link? <a href="mailto:ctf@securityvolition.com">Tell us</a> <small>(placeholder address)</small>.</p></section>'''
+
+DISCLOSURE = '''<section class="disclosure" id="disclosure"><h2>Affiliate disclosure</h2>
+<p>Some links on this site are affiliate links, including Hack The Box. If you sign up or buy through them, the DFIR CTF Board may earn a commission at no extra cost to you. Listings are never paid placements: events are included only because they are DFIR, forensics or blue-team challenges.</p>
+<p>Affiliate links are marked and open in a new tab.</p></section>'''
 
 def page(title, active, body, desc, path):
     c = CFG; canon = c["base_url"].rstrip("/") + "/" + path
@@ -173,7 +194,8 @@ def page(title, active, body, desc, path):
 </div></header>
 <main class="wrap">{body}</main>
 <footer><div class="wrap">
-<p>A <a href="{esc(c["brand_url"])}">{esc(c["brand"])}</a> project · Data from <a href="https://ctftime.org/">CTFtime</a>, organizer pages and <a href="https://aboutdfir.com/education/challenges-ctfs/">AboutDFIR</a> · Last built {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} UTC</p></div></footer>
+<p>A <a href="{esc(c["brand_url"])}">{esc(c["brand"])}</a> project · Data from <a href="https://ctftime.org/">CTFtime</a>, organizer pages and <a href="https://aboutdfir.com/education/challenges-ctfs/">AboutDFIR</a> · Last built {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} UTC</p>
+<p>Some links are affiliate links. <a href="about.html#disclosure">Affiliate disclosure</a></p></div></footer>
 </body></html>'''
 
 def build(offline=False):
@@ -187,12 +209,11 @@ def build(offline=False):
 <script>document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filters button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('#dated .card').forEach(c=>c.hidden=!(b.dataset.f==='all'||c.dataset.level===b.dataset.f));});</script>'''
     hero = f'''<section class="hero"><h1>DFIR &amp; blue-team CTFs, in one place.</h1><p>{esc(CFG["tagline"])}</p>
 <p class="stats"><b>{len(dated)}</b> dated events in the next {CFG["window_days"]} days · <b>{n_dfir}</b> DFIR-focused · <b>{len(arch)}</b> archived challenges</p></section>'''
-    body = hero + SPONSOR + f'''<h2 id="dated">Upcoming — confirmed dates</h2>
+    body = hero + train_box() + SPONSOR + f'''<h2 id="dated">Upcoming — confirmed dates</h2>
 <p class="note">Times for CTFtime events are in UTC. "Forensics category" = general CTF that lists forensics challenges. Last CTFtime pull: {esc((fetched or "")[:16].replace("T"," "))} UTC.</p>{filt}
 <div class="list" id="dated">{"".join(event_card(e) for e in dated)}</div>
 <h2>Announced, date TBA</h2><p class="note">Recurring events whose next date isn't confirmed by the organizer yet.</p>
 <div class="list">{"".join(event_card(e) for e in tba)}</div>
-{AFFIL}
 <h2>Always-on practice platforms</h2><div class="list">{"".join(event_card(e) for e in always)}</div>
 {newsletter()}{ABOUT}'''
     OUT.mkdir(exist_ok=True)
@@ -201,9 +222,9 @@ def build(offline=False):
 <input class="search" id="q" type="search" placeholder="Filter: memory, iOS, pcap, Magnet…" aria-label="Filter archive">
 <div class="list" id="arch">{"".join(archive_card(a) for a in arch)}</div>
 <script>document.getElementById('q').oninput=e=>{{const v=e.target.value.toLowerCase();document.querySelectorAll('#arch .arc').forEach(a=>a.hidden=!a.dataset.text.includes(v));}};</script>
-{AFFIL}{newsletter(True)}'''
+{train_box()}{newsletter(True)}'''
     (OUT / "archive.html").write_text(page(f'Archive of past DFIR challenges — {CFG["site_name"]}', "arc", abody, "Past DFIR CTFs with evidence images and write-ups.", "archive.html"))
-    (OUT / "about.html").write_text(page(f'About — {CFG["site_name"]}', "about", ABOUT + SPONSOR + newsletter(True), "About the Security Volition CTF Board.", "about.html"))
+    (OUT / "about.html").write_text(page(f'About — {CFG["site_name"]}', "about", ABOUT + DISCLOSURE + SPONSOR + newsletter(True), "About the Security Volition CTF Board.", "about.html"))
     (OUT / "CNAME").write_text(CFG.get("custom_domain", "ctf.securityvolition.com") + "\n")
     (OUT / "style.css").write_text((ROOT / "templates" / "style.css").read_text())
     (OUT / "events.json").write_text(json.dumps([{k: (v.isoformat() if isinstance(v, dt.datetime) else v) for k, v in e.items()} for e in dated + tba + always], indent=1, default=str))

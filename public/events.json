@@ -1,131 +1,5 @@
 [
  {
-  "title": "Hacker's Gambit 2026 (Round 2 \u2013 Grand Finale)",
-  "organizer": "JCOE Cyber Sentinels",
-  "start": "2026-10-30T06:30:00+00:00",
-  "end": "2026-10-31T06:30:00+00:00",
-  "status": "dated",
-  "level": "forensics",
-  "tags": [
-   "Forensics category",
-   "Jeopardy",
-   "Onsite"
-  ],
-  "where": "Onsite: Jaihind College of Engineering,At Post Kuran, Taluka Junnar, Pune - 410511, Maharashtra, India  (19\u00b009'47.2\"N 73\u00b054'52.2\"E)",
-  "cost": "Restrictions: Prequalified",
-  "url": "https://unstop.com/p/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293",
-  "ctftime": "https://ctftime.org/event/3381/",
-  "weight": 0.0,
-  "source": "CTFtime",
-  "matched": [
-   "forensic",
-   "steganography"
-  ]
- },
- {
-  "title": "HI Cyber Con 2026 CTF",
-  "organizer": "HiddenInvestigations",
-  "start": "2026-10-30T14:00:00+00:00",
-  "end": "2026-11-01T14:00:00+00:00",
-  "status": "dated",
-  "level": "forensics",
-  "tags": [
-   "Forensics category",
-   "Jeopardy"
-  ],
-  "where": "Online",
-  "cost": "Restrictions: Open",
-  "url": "https://ctf.hiddeninvestigations.net/",
-  "ctftime": "https://ctftime.org/event/3460/",
-  "weight": 0.0,
-  "source": "CTFtime",
-  "matched": [
-   "forensic",
-   "steganography"
-  ]
- },
- {
-  "title": "SANS DFIR NetWars \u2014 London",
-  "organizer": "SANS Institute",
-  "start": "2026-11-05T00:00:00+00:00",
-  "end": "2026-11-06T23:59:00+00:00",
-  "status": "dated",
-  "where": "London, UK (in person only)",
-  "cost": "Free with a 4\u20136 day SANS course; paid standalone registration",
-  "tags": [
-   "DFIR",
-   "Threat hunting",
-   "Malware"
-  ],
-  "url": "https://www.sans.org/cyber-ranges/upcoming-netwars-tournament",
-  "source_link": "https://www.sans.org/cyber-security-training-events/london-november-2026",
-  "level": "dfir",
-  "source": "Verified"
- },
- {
-  "title": "PINK+ CTF 2026",
-  "organizer": "PINK+",
-  "start": "2026-11-06T12:00:00+00:00",
-  "end": "2026-11-09T12:00:00+00:00",
-  "status": "dated",
-  "level": "forensics",
-  "tags": [
-   "Forensics category",
-   "Jeopardy"
-  ],
-  "where": "Online",
-  "cost": "Restrictions: Open",
-  "url": "https://ctf.pink.bayern/",
-  "ctftime": "https://ctftime.org/event/3331/",
-  "weight": 0.0,
-  "source": "CTFtime",
-  "matched": [
-   "steganography"
-  ]
- },
- {
-  "title": "CSCTF 2026",
-  "organizer": "Mirachron",
-  "start": "2026-11-06T13:00:00+00:00",
-  "end": "2026-11-08T13:00:00+00:00",
-  "status": "dated",
-  "level": "forensics",
-  "tags": [
-   "Forensics category",
-   "Jeopardy"
-  ],
-  "where": "Online",
-  "cost": "Restrictions: Open",
-  "url": "https://2026.chronos-security.ro/",
-  "ctftime": "https://ctftime.org/event/3333/",
-  "weight": 0.0,
-  "source": "CTFtime",
-  "matched": [
-   "forensic"
-  ]
- },
- {
-  "title": "SpookyCTF 2026",
-  "organizer": "NICC",
-  "start": "2026-11-06T17:00:00+00:00",
-  "end": "2026-11-07T17:00:00+00:00",
-  "status": "dated",
-  "level": "forensics",
-  "tags": [
-   "Forensics category",
-   "Jeopardy"
-  ],
-  "where": "Online",
-  "cost": "Restrictions: Open",
-  "url": "https://spooky.ctfd.io/",
-  "ctftime": "https://ctftime.org/event/3339/",
-  "weight": 0.0,
-  "source": "CTFtime",
-  "matched": [
-   "forensic"
-  ]
- },
- {
   "title": "KDFS Challenge 2026 (digital forensics CTF)",
   "organizer": "Korea Digital Forensic Society",
   "start": "2026-11-09T00:00:00+00:00",
@@ -182,6 +56,27 @@
   "url": "https://wolvctf.io/",
   "ctftime": "https://ctftime.org/event/3049/",
   "weight": 0.0,
+  "source": "CTFtime",
+  "matched": [
+   "forensic"
+  ]
+ },
+ {
+  "title": "h4ckc0n 2026",
+  "organizer": "d4rkc0de",
+  "start": "2026-11-14T15:30:00+00:00",
+  "end": "2026-11-15T15:30:00+00:00",
+  "status": "dated",
+  "level": "forensics",
+  "tags": [
+   "Forensics category",
+   "Jeopardy"
+  ],
+  "where": "Online",
+  "cost": "Restrictions: Open",
+  "url": "https://h4ckc0n.in/",
+  "ctftime": "https://ctftime.org/event/3464/",
+  "weight": 24.23,
   "source": "CTFtime",
   "matched": [
    "forensic"
@@ -267,27 +162,6 @@
   "source": "CTFtime",
   "matched": [
    "forensic"
-  ]
- },
- {
-  "title": "Cyber Ninja CTF 2026 - BLACKOUT",
-  "organizer": "OteriHack",
-  "start": "2026-11-21T09:00:00+00:00",
-  "end": "2026-11-22T09:00:00+00:00",
-  "status": "dated",
-  "level": "dfir",
-  "tags": [
-   "DFIR focus",
-   "Jeopardy"
-  ],
-  "where": "Online",
-  "cost": "Restrictions: Individual",
-  "url": "https://www.cyber-ninja-ctf.fr/",
-  "ctftime": "https://ctftime.org/event/3490/",
-  "weight": 0,
-  "source": "CTFtime",
-  "matched": [
-   "dfir"
   ]
  },
  {

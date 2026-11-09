@@ -10,3 +10,9 @@ ctftime_keywords:
 custom_domain: ctf.securityvolition.com
 newsletter_url: https://dfirctfboard.beehiiv.com/subscribe
 beehiiv_form_id: 9ef17098-b64a-40a9-b1b4-3d255dc6d026
+# Affiliate links (Impact partner 8069267, media property ctf.securityvolition.com)
+affiliates:
+  htb_home: https://hacktheboxltd.sjv.io/1GYXom      # www.hackthebox.com
+  htb_academy: https://hacktheboxltd.sjv.io/gRnmL9   # academy.hackthebox.com
+  htb_ctf: https://hacktheboxltd.sjv.io/oNKxPm       # ctf.hackthebox.com; accepts ?u=<urlencoded deep link>
+  htb_ctf_hosts: [ctf.hackthebox.com]

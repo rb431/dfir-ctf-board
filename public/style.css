@@ -49,3 +49,8 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:18px 0;color:var
 @media (max-width:560px){.card,.arc{padding:12px;gap:10px}.cal,.yr{flex-basis:46px}.hero{padding-top:26px}}
 .newsletter.small{margin:28px 0 10px;padding:16px 18px}.newsletter.small h2{font-size:1.1rem}
 .newsletter iframe{max-width:100%}.fallback{font-size:.85rem;color:var(--mute);margin:8px 0 0}
+.train{border:1px solid var(--line);border-left:3px solid var(--acc2);border-radius:12px;padding:14px 16px;margin:22px 0;background:var(--panel)}
+.train h2{margin:0 0 4px;font-size:1.1rem}.train ul{margin:6px 0;padding-left:18px}.train li{margin:4px 0}
+.aff-label{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.05em;color:var(--acc2);text-transform:uppercase;margin-left:6px}
+.train small,.aff-mark{color:var(--mute);font-size:.78rem}
+.disclosure{margin-top:28px}
